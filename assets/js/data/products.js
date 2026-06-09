@@ -11,7 +11,7 @@ export const products = [
     categories: ["Oversized Tees", "Best Sellers"],
     media: {
       type: "image",
-      src: "./assets/media/products/noir-oversized-tee.jpg",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Black oversized tee on a dark background"
     }
   },
@@ -23,7 +23,7 @@ export const products = [
     categories: ["Graphic Tees", "New Drops"],
     media: {
       type: "gif",
-      src: "./assets/media/products/ash-graphic-tee.gif",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Animated graphic tee visual"
     }
   },
@@ -35,7 +35,7 @@ export const products = [
     categories: ["Hoodies", "Limited", "Best Sellers"],
     media: {
       type: "image",
-      src: "./assets/media/products/midnight-hoodie.webp",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Heavy hoodie in charcoal black"
     }
   },
@@ -47,7 +47,7 @@ export const products = [
     categories: ["Oversized Tees"],
     media: {
       type: "image",
-      src: "./assets/media/products/monolith-tee.jpg",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Minimal oversized tee product shot"
     }
   },
@@ -59,7 +59,7 @@ export const products = [
     categories: ["Graphic Tees", "New Drops"],
     media: {
       type: "image",
-      src: "./assets/media/products/signal-graphic.jpg",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Graphic tee with monochrome print"
     }
   },
@@ -72,7 +72,7 @@ export const products = [
     media: {
       type: "video",
       src: "./assets/media/products/void-hoodie.mp4",
-      poster: "./assets/media/products/void-hoodie-poster.jpg",
+      poster: "./assets/media/products/noir-oversized-tee.png",
       alt: "Video of the void zip hoodie"
     }
   },
@@ -84,7 +84,7 @@ export const products = [
     categories: ["Oversized Tees", "New Drops"],
     media: {
       type: "image",
-      src: "./assets/media/products/oxide-oversized.webp",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Oversized tee in charcoal tone"
     }
   },
@@ -96,7 +96,7 @@ export const products = [
     categories: ["Hoodies", "Limited"],
     media: {
       type: "gif",
-      src: "./assets/media/products/grain-hoodie.gif",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Animated hoodie product media"
     }
   },
@@ -108,7 +108,7 @@ export const products = [
     categories: ["Graphic Tees"],
     media: {
       type: "image",
-      src: "./assets/media/products/afterimage-tee.jpg",
+      src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Graphic tee on dark editorial set"
     }
   }
