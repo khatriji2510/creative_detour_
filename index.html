@@ -1,1 +1,194 @@
-<!doctype html><html><head><meta charset='utf-8'><title>NOIR ATELIER</title></head><body><h1>NOIR ATELIER</h1><p>Project skeleton generated from chat.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium fashion brand website with editorial storytelling and luxury ecommerce experience." />
+  <title>NOIR ATELIER — Premium Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- System font stack intentionally used for reliability and deployment simplicity -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body class="page page-home">
+  <div class="page-transition"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-mark" href="./index.html" aria-label="NOIR ATELIER home">
+        <span class="brand-mark__glyph"></span>
+        <span class="brand-mark__text">NOIR ATELIER</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="./index.html" class="nav-link is-active">Home</a>
+        <a href="./shop.html" class="nav-link">Shop</a>
+        <a href="#story" class="nav-link">Story</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured collection">
+      <div class="hero__media-wrap">
+        <div class="hero__media" id="heroMedia"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__frame container">
+          <div class="hero__content reveal">
+            <p class="eyebrow">Luxury streetwear · Limited seasonal release</p>
+            <h1 class="hero__title" id="heroTitle">Tailored edge for the modern uniform.</h1>
+            <p class="hero__copy" id="heroCopy">
+              Elevated essentials built with editorial restraint, premium fabrics, and a visual language designed to feel timeless.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="./shop.html">Shop Now</a>
+              <a class="btn btn--secondary" href="#featured">View Collection</a>
+            </div>
+          </div>
+
+          <div class="hero__meta reveal">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Drop</span>
+              <span class="hero__meta-value" id="heroDrop">001 — Noir City</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Focus</span>
+              <span class="hero__meta-value" id="heroFocus">Minimal silhouettes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__controls container">
+          <button class="hero__arrow" type="button" id="heroPrev" aria-label="Previous slide">←</button>
+          <div class="hero__indicators" id="heroIndicators" aria-label="Hero slide indicators"></div>
+          <button class="hero__arrow" type="button" id="heroNext" aria-label="Next slide">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--featured" id="featured">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Collection</p>
+          <h2>Curated essentials with a premium point of view.</h2>
+          <p>
+            Designed to read like a fashion editorial and shop like a modern luxury storefront.
+          </p>
+        </div>
+
+        <div class="product-strip reveal" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--story" id="story">
+      <div class="container story-grid">
+        <div class="story-media reveal">
+          <div class="story-media__card">
+            <div class="story-media__image" aria-hidden="true"></div>
+            <div class="story-media__tag">Designed in monochrome</div>
+          </div>
+        </div>
+
+        <div class="story-content reveal">
+          <p class="eyebrow">Brand Story</p>
+          <h2>Quiet confidence, heavy detail, and a silhouette-first philosophy.</h2>
+          <p>
+            NOIR ATELIER is built around the idea that clothing should feel architectural.
+            Every cut, surface, and proportion is considered to create a wardrobe that looks deliberate from every angle.
+          </p>
+          <p>
+            The result is a dark, refined identity with enough visual tension to feel contemporary,
+            but enough restraint to remain timeless.
+          </p>
+
+          <div class="story-points">
+            <div class="story-point">
+              <span class="story-point__label">Fabrication</span>
+              <span class="story-point__value">Heavyweight and structured</span>
+            </div>
+            <div class="story-point">
+              <span class="story-point__label">Mood</span>
+              <span class="story-point__value">Editorial and elevated</span>
+            </div>
+            <div class="story-point">
+              <span class="story-point__label">Palette</span>
+              <span class="story-point__value">Black, charcoal, bone</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--highlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Collection Highlights</p>
+          <h2>Built for a premium first impression on every screen.</h2>
+        </div>
+
+        <div class="highlights-grid">
+          <article class="highlight-card reveal">
+            <span class="highlight-card__index">01</span>
+            <h3>Hero media system</h3>
+            <p>Supports images, GIFs, and MP4 video with the same structure.</p>
+          </article>
+
+          <article class="highlight-card reveal">
+            <span class="highlight-card__index">02</span>
+            <h3>Luxury motion design</h3>
+            <p>Smooth fades, subtle scale, and refined hover states.</p>
+          </article>
+
+          <article class="highlight-card reveal">
+            <span class="highlight-card__index">03</span>
+            <h3>Responsive by design</h3>
+            <p>Mobile-first interactions with premium shopping ergonomics.</p>
+          </article>
+
+          <article class="highlight-card reveal">
+            <span class="highlight-card__index">04</span>
+            <h3>Easy content editing</h3>
+            <p>Products and categories live in separate data files.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>For collaborations, wholesale, or launch inquiries.</h2>
+          <p>
+            Replace the email and social links below with your own brand details.
+            This section is static and ready for deployment as-is.
+          </p>
+        </div>
+
+        <div class="contact-card reveal">
+          <a href="mailto:hello@noiratelier.com" class="contact-link">hello@noiratelier.com</a>
+          <a href="https://instagram.com" class="contact-link" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://tiktok.com" class="contact-link" target="_blank" rel="noreferrer">TikTok</a>
+          <a href="./shop.html" class="btn btn--primary btn--full">Shop the Collection</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 NOIR ATELIER. All rights reserved.</p>
+      <p>Luxury streetwear built for a modern static deployment.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./assets/js/home.js"></script>
+</body>
+</html>
