@@ -133,10 +133,12 @@ function renderFeatured() {
 
   featuredGrid.innerHTML = "";
   selected.forEach((product) => featuredGrid.appendChild(createProductCard(product)));
+
+  // Animate newly inserted cards
+  setupRevealAnimations();
 }
 
 setupPageTransitions();
 setupMobileNav();
-setupRevealAnimations();
 setupHero();
 renderFeatured();
