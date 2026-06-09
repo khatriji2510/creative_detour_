@@ -8,7 +8,6 @@ const resultsLabel = document.getElementById("resultsLabel");
 const resultsCount = document.getElementById("resultsCount");
 const totalProducts = document.getElementById("totalProducts");
 const filtersToggle = document.getElementById("filtersToggle");
-const filtersBody = document.getElementById("filtersBody");
 const filtersPanel = document.querySelector(".filters-panel");
 
 let activeCategory = "All";
@@ -59,10 +58,13 @@ function renderProducts() {
   if (resultsLabel) resultsLabel.textContent = activeCategory === "All" ? "All items" : activeCategory;
   if (resultsCount) resultsCount.textContent = `${filtered.length} product${filtered.length === 1 ? "" : "s"}`;
   if (totalProducts) totalProducts.textContent = String(products.length).padStart(2, "0");
+
+  // Make newly added cards animate in
+  setupRevealAnimations();
 }
 
 function setupFiltersPanel() {
-  if (!filtersToggle || !filtersBody || !filtersPanel) return;
+  if (!filtersToggle || !filtersPanel) return;
 
   const applyMobileState = () => {
     if (window.innerWidth <= 760) {
@@ -86,7 +88,6 @@ function setupFiltersPanel() {
 
 setupPageTransitions();
 setupMobileNav();
-setupRevealAnimations();
 setupFiltersPanel();
 renderFilters();
 renderProducts();
