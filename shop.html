@@ -1,1 +1,87 @@
-<!doctype html><html><head><meta charset='utf-8'><title>Shop</title></head><body><h1>Shop</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop all items from NOIR ATELIER, with premium filters and responsive product cards." />
+  <title>NOIR ATELIER — Shop</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body class="page page-shop">
+  <div class="page-transition"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-mark" href="./index.html" aria-label="NOIR ATELIER home">
+        <span class="brand-mark__glyph"></span>
+        <span class="brand-mark__text">NOIR ATELIER</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./shop.html" class="nav-link is-active">Shop</a>
+        <a href="./index.html#story" class="nav-link">Story</a>
+        <a href="./index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shop-page">
+    <section class="shop-hero">
+      <div class="container shop-hero__inner reveal">
+        <p class="eyebrow">Shop / All Items</p>
+        <div class="shop-hero__row">
+          <div>
+            <h1>Modern essentials, filtered with precision.</h1>
+            <p>
+              Browse the full collection. Use the category controls to instantly refine the selection.
+            </p>
+          </div>
+          <div class="shop-hero__stats">
+            <span class="shop-hero__stat-label">Collection size</span>
+            <span class="shop-hero__stat-value" id="totalProducts">00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-layout container">
+      <aside class="filters-panel reveal">
+        <div class="filters-panel__top">
+          <p class="filters-panel__title">Categories</p>
+          <button class="filters-toggle" id="filtersToggle" type="button" aria-expanded="true">
+            Filter
+          </button>
+        </div>
+
+        <div class="filters-panel__body" id="filtersBody">
+          <div class="filters-list" id="categoryFilters" aria-label="Product categories"></div>
+        </div>
+      </aside>
+
+      <section class="shop-results">
+        <div class="shop-results__header reveal">
+          <p class="shop-results__label" id="resultsLabel">All items</p>
+          <p class="shop-results__count" id="resultsCount">0 products</p>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 NOIR ATELIER. All rights reserved.</p>
+      <p>Static frontend deployment ready.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./assets/js/shop.js"></script>
+</body>
+</html>
