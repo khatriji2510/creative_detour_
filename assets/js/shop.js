@@ -1,0 +1,1 @@
+// Add the full shop.js from the chat response here

@@ -1,0 +1,1 @@
+// Add the full home.js from the chat response here

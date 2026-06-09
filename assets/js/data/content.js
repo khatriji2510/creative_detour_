@@ -1,0 +1,1 @@
+export const heroSlides=[]; export const featuredIds=[];
