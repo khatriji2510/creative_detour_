@@ -14,9 +14,9 @@ export const products = [
       src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Black oversized tee on a dark background"
     }
-     buyLink: "https://rzp.io/rzp/Donnie"
-}
   },
+   buyLink: "https://rzp.io/rzp/Donnie"
+}
   {
     id: "ash-graphic-tee",
     title: "Ash Graphic Tee",
