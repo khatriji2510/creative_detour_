@@ -9,7 +9,7 @@ export const heroSlides = [
     focus: "Minimal silhouettes",
     cta: "Shop Now",
     media: {
-      type: "image",
+      type: "image",                                                    // CHANGE TO "gif","video","image"
       src: "./assets/media/hero/hero-01.jpg",
       alt: "Luxury streetwear hero image with dark tones"
     }
@@ -21,8 +21,8 @@ export const heroSlides = [
     focus: "Editorial layering",
     cta: "View Collection",
     media: {
-      type: "gif",
-      src: "./assets/media/hero/hero-02.gif",
+      type: "image",                                       // CHANGE TO "gif","video","image"
+      src: "./assets/media/hero/hero-02.jpg",
       alt: "Animated fashion hero visual"
     }
   },
@@ -33,8 +33,8 @@ export const heroSlides = [
     focus: "Modern ecommerce",
     cta: "Shop Now",
     media: {
-      type: "video",
-      src: "./assets/media/hero/hero-03.mp4",
+      type: "image",                                        // CHANGE TO "gif","video","image"
+      src: "./assets/media/hero/hero-03.jpg",
       poster: "./assets/media/hero/hero-03-poster.jpg",
       alt: "Fashion video loop in monochrome"
     }
