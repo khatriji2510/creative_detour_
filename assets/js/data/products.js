@@ -16,7 +16,7 @@ export const products = [
     }
   },
    buyLink: "https://rzp.io/rzp/Donnie"
-}
+},
   {
     id: "ash-graphic-tee",
     title: "Ash Graphic Tee",
