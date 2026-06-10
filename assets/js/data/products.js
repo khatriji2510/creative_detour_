@@ -13,8 +13,8 @@ export const products = [
       type: "image",
       src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Black oversized tee on a dark background"
-    }
-  },
+    
+     },
    buyLink: "https://rzp.io/rzp/Donnie"
 },
   {
