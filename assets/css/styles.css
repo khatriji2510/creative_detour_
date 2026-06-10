@@ -633,15 +633,25 @@ p {
   box-shadow: var(--shadow);
 }
 
-.story-media__image {
+.story-image {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 70% 20%, rgba(255,255,255,0.18), transparent 32%),
-    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)),
-    url("../media/editorial-story.jpg") center center / cover no-repeat;
-  filter: grayscale(1) contrast(1.05);
-  transform: scale(1.02);
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  /* Adjust crop for your portrait */
+  object-position: center 82%;
+
+  transition: transform .8s ease;
+}
+
+.story-media__card:hover .story-image {
+  transform: scale(1.03);
 }
 
 .story-media__tag {
@@ -948,10 +958,7 @@ p {
 }
 
 /* Media placeholders - replace with your own files */
-.story-media__image {
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.38)),
-    url("../media/editorial-story.jpg");
-}
+
 
 @media (max-width: 1180px) {
   .product-strip {
