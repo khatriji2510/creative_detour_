@@ -81,9 +81,17 @@ export function createProductCard(product) {
   price.className = "price";
   price.textContent = formatPrice(product.price);
 
-  const cta = document.createElement("span");
-  cta.className = "card-link";
-  cta.textContent = "Shop now";
+const cta = document.createElement("a");
+
+cta.className = "card-link";
+
+cta.textContent = "Buy Now";
+
+cta.href = product.buyLink;
+
+cta.target = "_blank";
+
+cta.rel = "noopener noreferrer";
 
   meta.append(price, cta);
   body.append(title, meta);
