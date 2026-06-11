@@ -3,10 +3,10 @@
 
 export const heroSlides = [
   {
-    title: "Tailored edge for the modern uniform.",
-    copy: "Elevated essentials built with editorial restraint, premium fabrics, and a visual language designed to feel timeless.",
-    drop: "001 — Noir City",
-    focus: "Minimal silhouettes",
+    title: "Why Are You Wearing That Stupid Man Suit?",
+    copy: "premium oversized graphic tee blends cinematic nostalgia with modern streetwear aesthetics.",
+    drop: "001 — Donnie Tee",
+    focus: "Cult Cinema",
     cta: "Shop Now",
     media: {
       type: "image",                                                    // CHANGE TO "gif","video","image"
@@ -15,10 +15,10 @@ export const heroSlides = [
     }
   },
   {
-    title: "Built to move like a collection, not a catalog.",
-    copy: "Sharp proportions, quiet branding, and the confidence of a wardrobe designed around form and texture.",
-    drop: "002 — After Dark",
-    focus: "Editorial layering",
+    title: "Donnie Darko & Gretchen Ross Poster",
+    copy: "Bring home a piece of cult cinema with this high-quality Donnie Darko poster featuring the iconic Frank artwork.",
+    drop: "002 — Donnie Poster",
+    focus: "Cult Cinema",
     cta: "View Collection",
     media: {
       type: "image",                                       // CHANGE TO "gif","video","image"
@@ -27,10 +27,10 @@ export const heroSlides = [
     }
   },
   {
-    title: "A visual system for the brand that wears like a statement.",
-    copy: "Designed for premium mobile shopping, crisp desktop composition, and unforgettable first impressions.",
-    drop: "003 — Static Motion",
-    focus: "Modern ecommerce",
+    title: "Donnie Darko poster featuring the iconic Frank",
+    copy: "Bring home a piece of cult cinema with this high-quality Donnie Darko poster featuring the iconic Frank artwork.",
+    drop: "003 — Frank Artwork",
+    focus: "Cult Cinema",
     cta: "Shop Now",
     media: {
       type: "image",                                        // CHANGE TO "gif","video","image"
