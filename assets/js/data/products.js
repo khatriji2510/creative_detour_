@@ -25,7 +25,7 @@ export const products = [
     categories: ["Posters"],
     media: {
       type: "gif",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      src: "./assets/media/products/a3 mockup.png",
       alt: "Animated graphic tee visual"
     },
    buyLink: "https://rzp.io/rzp/x9i2BRd"
@@ -38,7 +38,7 @@ export const products = [
     categories: ["Posters"],
     media: {
       type: "image",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      src: "./assets/media/products/hero-03.jpg",
       alt: "Heavy hoodie in charcoal black"
     },
    buyLink: "https://rzp.io/rzp/JEWsoUTA"
@@ -51,7 +51,7 @@ export const products = [
     categories: ["Posters"],
     media: {
       type: "image",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      src: "./assets/media/products/6149679396307013603.jpg",
       alt: "Minimal oversized tee product shot"
     },
    buyLink: "https://rzp.io/rzp/sqMT7qL5"
