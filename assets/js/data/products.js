@@ -5,8 +5,8 @@
 export const products = [
   {
     id: "noir-oversized-tee",
-    title: "Noir Oversized Tee",
-    price: 58,
+    title: "Donnie Darko tee",
+    price: 1099,
     badge: "Best Seller",
     categories: ["Oversized Tees", "Best Sellers"],
     media: {
@@ -19,8 +19,8 @@ export const products = [
 },
   {
     id: "ash-graphic-tee",
-    title: "Ash Graphic Tee",
-    price: 62,
+    title: "Donnie Darko Poster",
+    price: 200+,
     badge: "New",
     categories: ["Graphic Tees", "New Drops"],
     media: {
