@@ -4,9 +4,6 @@
 export const categories = [
   "All",
   "Oversized Tees",
-  "Graphic Tees",
-  "Hoodies",
-  "New Drops",
-  "Best Sellers",
-  "Limited"
+  "Posters",
+  "Best Sellers"
 ];
