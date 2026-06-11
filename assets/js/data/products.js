@@ -19,10 +19,10 @@ export const products = [
 },
   {
     id: "ash-graphic-tee",
-    title: "Donnie Darko Poster",
-    price: 200+,
+    title: "Donnie Gretchen Poster",
+    price: 200,
     badge: "New",
-    categories: ["Graphic Tees", "New Drops"],
+    categories: ["Posters"],
     media: {
       type: "gif",
       src: "./assets/media/products/noir-oversized-tee.png",
