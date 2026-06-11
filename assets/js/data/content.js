@@ -4,7 +4,7 @@
 export const heroSlides = [
   {
     title: "Why Are You Wearing That Stupid Man Suit?",
-    copy: "premium oversized graphic tee blends cinematic nostalgia with modern streetwear aesthetics.",
+    copy: "Premium oversized graphic tee blends cinematic nostalgia with modern streetwear aesthetics.",
     drop: "001 — Donnie Tee",
     focus: "Cult Cinema",
     cta: "Shop Now",
@@ -16,7 +16,7 @@ export const heroSlides = [
   },
   {
     title: "Donnie Darko & Gretchen Ross Poster",
-    copy: "Bring home a piece of cult cinema with this high-quality Donnie Darko poster featuring the iconic Frank artwork.",
+    copy: "Bring home a piece of cult cinema with this high-quality Donnie Darko poster featuring the Gretchen Ross artwork.",
     drop: "002 — Donnie Poster",
     focus: "Cult Cinema",
     cta: "View Collection",
