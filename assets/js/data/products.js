@@ -27,32 +27,36 @@ export const products = [
       type: "gif",
       src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Animated graphic tee visual"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/x9i2BRd"
   },
   {
     id: "midnight-hoodie",
-    title: "Midnight Heavy Hoodie",
-    price: 94,
+    title: "Frank Artwork Poster",
+    price: 200,
     badge: "Limited",
-    categories: ["Hoodies", "Limited", "Best Sellers"],
+    categories: ["Posters"],
     media: {
       type: "image",
       src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Heavy hoodie in charcoal black"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/JEWsoUTA"
   },
   {
     id: "monolith-tee",
-    title: "Monolith Tee",
-    price: 54,
-    badge: "",
-    categories: ["Oversized Tees"],
+    title: "Donnie Darko Poster",
+    price: 200,
+    badge: "Iconic",
+    categories: ["Posters"],
     media: {
       type: "image",
       src: "./assets/media/products/noir-oversized-tee.png",
       alt: "Minimal oversized tee product shot"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/sqMT7qL5"
   },
+  /*
   {
     id: "signal-graphic",
     title: "Signal Graphic Tee",
@@ -114,4 +118,5 @@ export const products = [
       alt: "Graphic tee on dark editorial set"
     }
   }
+  */
 ];
