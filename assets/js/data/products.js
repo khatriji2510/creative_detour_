@@ -6,7 +6,7 @@ export const products = [
   {
     id: "noir-oversized-tee",
     title: "Donnie Darko tee",
-    price: 1099,
+    price: 999,
     badge: "Best Seller",
     categories: ["Oversized Tees", "Best Sellers"],
     media: {
