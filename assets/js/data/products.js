@@ -56,32 +56,35 @@ export const products = [
     },
    buyLink: "https://rzp.io/rzp/sqMT7qL5"
   },
-  /*
+ 
   {
     id: "signal-graphic",
-    title: "Signal Graphic Tee",
-    price: 60,
+    title: "KALESHI? ME? YEAH OBVIOUSLY",
+    price: 599,
     badge: "New",
-    categories: ["Graphic Tees", "New Drops"],
+    categories: ["Baby Tees"],
     media: {
       type: "image",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      src: "./assets/media/products/sa.png",
       alt: "Graphic tee with monochrome print"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/KNrZJjb"
   },
   {
     id: "void-hoodie",
-    title: "Void Zip Hoodie",
-    price: 98,
-    badge: "Best Seller",
-    categories: ["Hoodies", "Best Sellers"],
+    title: "Maybe Diet Coke Is Addicted",
+    price: 699,
+    badge: "Trendy",
+    categories: ["Graphic Tees","Best Sellers"],
     media: {
-      type: "video",
-      src: "./assets/media/products/void-hoodie.mp4",
-      poster: "./assets/media/products/noir-oversized-tee.png",
+      type: "image",
+      src: "./assets/media/products/sfsd.png",
+      poster: "./assets/media/products/sfsd.png",
       alt: "Video of the void zip hoodie"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/8CKanIai"
   },
+   /*
   {
     id: "oxide-oversized",
     title: "Oxide Oversized Tee",
