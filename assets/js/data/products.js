@@ -84,19 +84,21 @@ export const products = [
     },
    buyLink: "https://rzp.io/rzp/8CKanIai"
   },
-   /*
+   
   {
     id: "oxide-oversized",
-    title: "Oxide Oversized Tee",
-    price: 56,
-    badge: "",
-    categories: ["Oversized Tees", "New Drops"],
+    title: "WHAT A TIME TO BE ALIVE",
+    price: 599,
+    badge: "New",
+    categories: ["Baby Tees"],
     media: {
       type: "image",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      src: "./assets/media/products/what a time.png",
       alt: "Oversized tee in charcoal tone"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/GfpGdUAE"
   },
+  /*
   {
     id: "grain-hoodie",
     title: "Grain Pullover Hoodie",
