@@ -93,7 +93,7 @@ export const products = [
     categories: ["Baby Tees"],
     media: {
       type: "image",
-      src: "./assets/media/products/what a time.png",
+      src: "./assets/media/products/whatatime.png",
       alt: "Oversized tee in charcoal tone"
     },
    buyLink: "https://rzp.io/rzp/GfpGdUAE"
