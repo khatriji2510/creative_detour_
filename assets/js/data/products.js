@@ -98,19 +98,21 @@ export const products = [
     },
    buyLink: "https://rzp.io/rzp/GfpGdUAE"
   },
-  /*
   {
     id: "grain-hoodie",
-    title: "Grain Pullover Hoodie",
-    price: 92,
+    title: "Ghurna Band Karo Noor.",
+    price: 699,
     badge: "Limited",
-    categories: ["Hoodies", "Limited"],
+    categories: ["Graphic Tees","Best Sellers"],
     media: {
-      type: "gif",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      type: "image",
+      src: "./assets/media/products/GhurnaBan.jpeg",
       alt: "Animated hoodie product media"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/mTYjf6P"
   },
+  
+  /*
   {
     id: "afterimage-tee",
     title: "Afterimage Tee",
