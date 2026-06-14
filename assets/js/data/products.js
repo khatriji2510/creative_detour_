@@ -75,7 +75,7 @@ export const products = [
     title: "Maybe Diet Coke Is Addicted",
     price: 699,
     badge: "Trendy",
-    categories: ["Graphic Tees","Best Sellers"],
+    categories: ["Oversized Tees", "Best Sellers"],
     media: {
       type: "image",
       src: "./assets/media/products/sfsd.png",
@@ -103,7 +103,7 @@ export const products = [
     title: "Ghurna Band Karo Noor.",
     price: 699,
     badge: "Limited",
-    categories: ["Graphic Tees","Best Sellers"],
+    categories: ["Oversized Tees", "Best Sellers"],
     media: {
       type: "image",
       src: "./assets/media/products/GhurnaBan.jpeg",
