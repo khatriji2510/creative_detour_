@@ -112,18 +112,18 @@ export const products = [
    buyLink: "https://rzp.io/rzp/mTYjf6P"
   },
   
-  /*
+  
   {
     id: "afterimage-tee",
-    title: "Afterimage Tee",
-    price: 52,
+    title: "Vozinha Tee",
+    price: 999,
     badge: "",
     categories: ["Graphic Tees"],
     media: {
       type: "image",
-      src: "./assets/media/products/noir-oversized-tee.png",
+      src: "./assets/media/products/vozinha.png",
       alt: "Graphic tee on dark editorial set"
-    }
+    },
+   buyLink: "https://rzp.io/rzp/xGk0d0Q"
   }
-  */
 ];
