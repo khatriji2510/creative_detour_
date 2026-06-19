@@ -140,5 +140,19 @@ export const products = [
       alt: "Graphic tee on dark editorial set"
     },
    buyLink: "https://rzp.io/rzp/57ePXPH"
-  } 
+  }, 
+
+  {
+    
+    title: "obsession eye regular tee",
+    price: 599,
+    badge: "",
+    categories: ["Graphic Tees"],
+    media: {
+      type: "image",
+      src: "./assets/media/products/obsession2.png",
+      alt: "Graphic tee on dark editorial set"
+    },
+   buyLink: "https://rzp.io/rzp/Urju3zof"
+  }  
 ];
