@@ -154,5 +154,19 @@ export const products = [
       alt: "Graphic tee on dark editorial set"
     },
    buyLink: "https://rzp.io/rzp/Urju3zof"
-  }  
+  }, 
+
+  {
+    
+    title: "obsession baby tee",
+    price: 599,
+    badge: "",
+    categories: ["Baby Tees"],
+    media: {
+      type: "image",
+      src: "./assets/media/products/obsession3.png",
+      alt: "Graphic tee on dark editorial set"
+    },
+   buyLink: "https://rzp.io/rzp/w8oBwIC"
+  } 
 ];
