@@ -130,7 +130,7 @@ export const products = [
   
   {
     
-    title: "obsession regular tee",
+    title: "Obsession regular tee",
     price: 599,
     badge: "",
     categories: ["Graphic Tees"],
@@ -144,7 +144,7 @@ export const products = [
 
   {
     
-    title: "obsession eye regular tee",
+    title: "Obsession eye regular tee",
     price: 599,
     badge: "",
     categories: ["Graphic Tees"],
@@ -158,7 +158,7 @@ export const products = [
 
   {
     
-    title: "obsession baby tee",
+    title: "Obsession baby tee",
     price: 599,
     badge: "",
     categories: ["Baby Tees"],
@@ -168,5 +168,19 @@ export const products = [
       alt: "Graphic tee on dark editorial set"
     },
    buyLink: "https://rzp.io/rzp/w8oBwIC"
+  },
+
+    {
+    
+    title: "Eh Earth tee",
+    price: 999,
+    badge: "",
+    categories: ["Baby Tees"],
+    media: {
+      type: "image",
+      src: "./assets/media/products/eh.png",
+      alt: "Graphic tee on dark editorial set"
+    },
+   buyLink: ""
   } 
 ];
