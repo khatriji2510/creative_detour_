@@ -175,7 +175,7 @@ export const products = [
     title: "Eh Earth tee",
     price: 999,
     badge: "",
-    categories: ["Baby Tees"],
+    categories: ["Oversized Tees","Graphic Tees"],
     media: {
       type: "image",
       src: "./assets/media/products/eh.png",
