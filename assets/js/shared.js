@@ -60,10 +60,6 @@ export function createProductCard(product) {
     overlay.appendChild(spacer);
   }
 
-  const overlayLabel = document.createElement("span");
-  overlayLabel.className = "card-link";
-  overlayLabel.textContent = "View details";
-  overlay.appendChild(overlayLabel);
 
   media.appendChild(overlay);
 
