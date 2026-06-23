@@ -3,21 +3,26 @@
 // Supported media types: image, gif, video
 
 export const products = [
-  {
-    id: "noir-oversized-tee",
-    title: "Donnie Darko tee",
-    price: 999,
-    badge: "Best Seller",
-    categories: ["Oversized Tees", "Best Sellers"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/noir-oversized-tee.png",
-      alt: "Black oversized tee on a dark background"
-    
-     },
-     prepaidButtonId: "pl_T5207RHq7lcb4y",
+ {
+  id: "noir-oversized-tee",
 
-  codButtonId: "pl_T52MHZYnqWubj5"
+  title: "Donnie Darko Tee",
+
+  price: 999,
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/noir-oversized-tee.jpg",
+    alt: "Donnie Darko Tee"
+  },
+
+  description:
+    "Premium oversized graphic tee inspired by Donnie Darko.",
+
+  payment: {
+    prepaid: "pl_T5207RHq7lcb4y",
+    cod: "pl_T52MHZYnqWubj5"
+  }
 },
   {
     id: "ash-graphic-tee",
