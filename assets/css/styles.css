@@ -1231,3 +1231,58 @@ body {
     gap: 32px;
   }
 }
+
+
+/* PRODUCT PAGE */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: minmax(320px, 520px) 1fr;
+  gap: 80px;
+  align-items: start;
+  padding-top: 120px;
+}
+
+.product-detail__media img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+}
+
+.product-detail__content {
+  color: var(--text);
+}
+
+.product-detail__content h1 {
+  margin: 12px 0;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 0.95;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.product-description {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+#prepaidContainer,
+#codContainer {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 24px;
+  background: rgba(255,255,255,.03);
+}
+
+@media (max-width: 900px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
