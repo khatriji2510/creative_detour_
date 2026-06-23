@@ -2,18 +2,12 @@ import { products } from "./data/products.js";
 
 document.body.classList.add("is-ready");
 
-console.log("products:", products);
-
 const params = new URLSearchParams(window.location.search);
-
 const productId = params.get("id");
 
-console.log("productId:", productId);
 const product = products.find(
   item => item.id === productId
 );
-
-console.log("FOUND PRODUCT:", product);
 
 if (!product) {
   document.body.innerHTML = `
@@ -23,15 +17,10 @@ if (!product) {
       font-size:20px;
       font-family:sans-serif;
     ">
-      Product not found<br><br>
-      URL id = ${productId}
+      Product not found
     </div>
   `;
   throw new Error("Product not found");
-}
-
-if (!product) {
-  document.body.innerHTML = "<h1>Product not found</h1>";
 }
 
 document.getElementById("productTitle").textContent =
@@ -46,36 +35,28 @@ document.getElementById("productImage").src =
 document.getElementById("productImage").alt =
   product.media.alt;
 
-const prepaidContainer =
-  document.getElementById("prepaidContainer");
+document.getElementById("prepaidContainer").innerHTML = `
+  <h3>Full Prepaid Order</h3>
+  <p>Pay the complete amount securely via Razorpay.</p>
 
-prepaidContainer.innerHTML = `
-<h3>Pay Full Amount</h3>
-
-<form>
-<script
-src="https://checkout.razorpay.com/v1/payment-button.js"
-data-payment_button_id="${product.prepaidButtonId}"
-async>
-</script>
-</form>
+  <form>
+    <script
+      src="https://checkout.razorpay.com/v1/payment-button.js"
+      data-payment_button_id="${product.prepaidButtonId}"
+      async>
+    </script>
+  </form>
 `;
 
-const codContainer =
-  document.getElementById("codContainer");
+document.getElementById("codContainer").innerHTML = `
+  <h3>Partial COD Order</h3>
+  <p>Pay a small advance now and the remaining amount on delivery.</p>
 
-codContainer.innerHTML = `
-<h3>Partial COD</h3>
-
-<p>
-Pay an advance now and the remaining amount on delivery.
-</p>
-
-<form>
-<script
-src="https://checkout.razorpay.com/v1/payment-button.js"
-data-payment_button_id="${product.codButtonId}"
-async>
-</script>
-</form>
+  <form>
+    <script
+      src="https://checkout.razorpay.com/v1/payment-button.js"
+      data-payment_button_id="${product.codButtonId}"
+      async>
+    </script>
+  </form>
 `;
