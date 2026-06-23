@@ -12,7 +12,7 @@ export const products = [
 
   media: {
     type: "image",
-    src: "./assets/media/products/noir-oversized-tee.jpg",
+    src: "./assets/media/products/noir-oversized-tee.png",
     alt: "Donnie Darko Tee"
   },
 
