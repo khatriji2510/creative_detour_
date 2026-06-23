@@ -15,7 +15,9 @@ export const products = [
       alt: "Black oversized tee on a dark background"
     
      },
-   buyLink: "https://rzp.io/rzp/Donnie"
+     prepaidButtonId: "pl_T5207RHq7lcb4y",
+
+  codButtonId: "pl_T52MHZYnqWubj5"
 },
   {
     id: "ash-graphic-tee",
