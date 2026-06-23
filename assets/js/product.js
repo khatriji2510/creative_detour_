@@ -1,9 +1,12 @@
 import { products } from "./data/products.js";
 
+console.log("products:", products);
+
 const params = new URLSearchParams(window.location.search);
 
 const productId = params.get("id");
 
+console.log("productId:", productId);
 const product = products.find(
   item => item.id === productId
 );
