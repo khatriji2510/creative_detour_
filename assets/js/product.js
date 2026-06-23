@@ -23,6 +23,8 @@ if (!product) {
   throw new Error("Product not found");
 }
 
+/* ---------- Product Content ---------- */
+
 document.getElementById("productTitle").textContent =
   product.title;
 
@@ -33,30 +35,102 @@ document.getElementById("productImage").src =
   product.media.src;
 
 document.getElementById("productImage").alt =
-  product.media.alt;
+  product.media.alt || product.title;
 
-document.getElementById("prepaidContainer").innerHTML = `
-  <h3>Full Prepaid Order</h3>
-  <p>Pay the complete amount securely via Razorpay.</p>
+/* ---------- Description ---------- */
 
-  <form>
-    <script
-      src="https://checkout.razorpay.com/v1/payment-button.js"
-      data-payment_button_id="${product.prepaidButtonId}"
-      async>
-    </script>
-  </form>
-`;
+const descriptionElement =
+  document.getElementById("productDescription");
 
-document.getElementById("codContainer").innerHTML = `
-  <h3>Partial COD Order</h3>
-  <p>Pay a small advance now and the remaining amount on delivery.</p>
+if (descriptionElement && product.description) {
+  descriptionElement.textContent =
+    product.description;
+}
 
-  <form>
-    <script
-      src="https://checkout.razorpay.com/v1/payment-button.js"
-      data-payment_button_id="${product.codButtonId}"
-      async>
-    </script>
-  </form>
-`;
+/* ---------- Full Prepaid ---------- */
+
+const prepaidContainer =
+  document.getElementById("prepaidContainer");
+
+if (product.payment?.prepaid) {
+
+  prepaidContainer.innerHTML = `
+    <h3>Full Prepaid Order</h3>
+    <p>
+      Pay the complete amount securely via Razorpay.
+    </p>
+  `;
+
+  const prepaidForm =
+    document.createElement("form");
+
+  const prepaidScript =
+    document.createElement("script");
+
+  prepaidScript.src =
+    "https://checkout.razorpay.com/v1/payment-button.js";
+
+  prepaidScript.async = true;
+
+  prepaidScript.setAttribute(
+    "data-payment_button_id",
+    product.payment.prepaid
+  );
+
+  prepaidForm.appendChild(prepaidScript);
+
+  prepaidContainer.appendChild(prepaidForm);
+
+} else {
+
+  prepaidContainer.innerHTML = `
+    <h3>Coming Soon</h3>
+    <p>
+      Payment option not available yet.
+    </p>
+  `;
+}
+
+/* ---------- Partial COD ---------- */
+
+const codContainer =
+  document.getElementById("codContainer");
+
+if (product.payment?.cod) {
+
+  codContainer.innerHTML = `
+    <h3>Partial COD Order</h3>
+    <p>
+      Pay a small advance now and the remaining amount on delivery.
+    </p>
+  `;
+
+  const codForm =
+    document.createElement("form");
+
+  const codScript =
+    document.createElement("script");
+
+  codScript.src =
+    "https://checkout.razorpay.com/v1/payment-button.js";
+
+  codScript.async = true;
+
+  codScript.setAttribute(
+    "data-payment_button_id",
+    product.payment.cod
+  );
+
+  codForm.appendChild(codScript);
+
+  codContainer.appendChild(codForm);
+
+} else {
+
+  codContainer.innerHTML = `
+    <h3>Coming Soon</h3>
+    <p>
+      COD option not available yet.
+    </p>
+  `;
+}
