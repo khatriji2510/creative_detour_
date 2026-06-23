@@ -83,7 +83,7 @@ cta.className = "card-link";
 
 cta.textContent = "Buy Now";
 
-cta.href = product.buyLink;
+cta.href = `./product.html?id=${product.id}`;
 
 cta.target = "_blank";
 
