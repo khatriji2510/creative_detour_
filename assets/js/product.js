@@ -11,6 +11,23 @@ const product = products.find(
   item => item.id === productId
 );
 
+console.log("FOUND PRODUCT:", product);
+
+if (!product) {
+  document.body.innerHTML = `
+    <div style="
+      color:white;
+      padding:40px;
+      font-size:20px;
+      font-family:sans-serif;
+    ">
+      Product not found<br><br>
+      URL id = ${productId}
+    </div>
+  `;
+  throw new Error("Product not found");
+}
+
 if (!product) {
   document.body.innerHTML = "<h1>Product not found</h1>";
 }
