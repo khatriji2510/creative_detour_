@@ -21,7 +21,7 @@ export const products = [
 
   payment: {
     prepaid: "pl_T5207RHq7lcb4y",
-    cod: "pl_T52MHZYnqWubj5"
+    cod: "pl_T5OO8GNXEpUquQ"
   }
 },
   {
