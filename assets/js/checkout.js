@@ -37,7 +37,8 @@ document.getElementById(
   "checkoutSummary"
 ).innerHTML = `
   <p><strong>Size:</strong> ${size}</p>
-  <p><strong>Color:</strong> ${color}</p>
-  <p><strong>Product:</strong> ₹${product.price}</p>
-  <p><strong>Shipping:</strong> ₹${product.shipping}</p>
+<p><strong>Color:</strong> ${color}</p>
+<p><strong>Product Price:</strong> ₹${product.price}</p>
+<p><strong>Shipping:</strong> ₹${product.shipping}</p>
+<p><strong>Total:</strong> ₹${product.price + product.shipping}</p>
 `;
