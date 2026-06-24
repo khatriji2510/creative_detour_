@@ -86,9 +86,43 @@ prepaidButton.addEventListener(
 
       console.error(error);
 
+      const options = {
+
+  key:
+    "rzp_test_T5XfJ1gxIf9WZl",
+
+  amount:
+    order.amount,
+
+  currency:
+    order.currency,
+
+  order_id:
+    order.id,
+
+  name:
+    "Creative Detour",
+
+  description:
+    product.title,
+
+  handler:
+    function (response) {
+
+      console.log(response);
+
       alert(
-        "Failed to create order"
+        "Payment Successful!"
       );
+
+    }
+
+};
+
+const razorpay =
+  new Razorpay(options);
+
+razorpay.open();
 
     }
 
