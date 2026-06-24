@@ -54,31 +54,28 @@ prepaidButton.addEventListener(
 
     try {
 
-      const response =
-        await fetch(
-          "/api/create-order",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type":
-                "application/json"
-            },
-            body: JSON.stringify({
-              amount:
-                (product.price +
-                  product.shipping) *
-                100
-            })
-          }
-        );
+     const response =
+  await fetch(
+    "/api/create-order",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type":
+          "application/json"
+      },
+      body: JSON.stringify({
+        amount:
+          (product.price +
+            product.shipping) *
+          100
+      })
+    }
+  );
 
-      
+const order =
+  await response.json();
 
-    } catch (error) {
-
-      console.error(error);
-
-      const options = {
+const options = {
 
   key:
     "rzp_test_T5XfJ1gxIf9WZl",
@@ -98,16 +95,15 @@ prepaidButton.addEventListener(
   description:
     product.title,
 
-  handler:
-    function (response) {
+  handler: function (response) {
 
-      console.log(response);
+    console.log(response);
 
-      alert(
-        "Payment Successful!"
-      );
+    alert(
+      "Payment Successful!"
+    );
 
-    }
+  }
 
 };
 
@@ -115,6 +111,14 @@ const razorpay =
   new Razorpay(options);
 
 razorpay.open();
+
+    } catch (error) {
+
+      console.error(error);
+
+      alert(
+        "Failed to start payment"
+      );
 
     }
 
