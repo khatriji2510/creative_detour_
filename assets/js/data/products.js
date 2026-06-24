@@ -9,7 +9,8 @@ export const products = [
   title: "Donnie Darko Tee",
 
   price: 999,
-
+  categories: ["Oversized Tees"],
+  badge: "Premium"
   media: {
     type: "image",
     src: "./assets/media/products/noir-oversized-tee.png",
