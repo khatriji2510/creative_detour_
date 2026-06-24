@@ -108,7 +108,7 @@ export const products = [
     },
     description: "Premium oversized graphic tee inspired by Donnie Darko.",
     payment: {
-      prepaid: "",
+      prepaid: "pl_T5Q2yqpphJ6HYD",
       cod: ""
     }
   },
