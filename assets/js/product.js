@@ -46,7 +46,29 @@ if (descriptionElement && product.description) {
   descriptionElement.textContent =
     product.description;
 }
+const sizesElement =
+  document.getElementById("productSizes");
 
+if (sizesElement && product.sizes) {
+  sizesElement.textContent =
+    product.sizes.join(" • ");
+}
+
+const colorsElement =
+  document.getElementById("productColors");
+
+if (colorsElement && product.colors) {
+  colorsElement.textContent =
+    product.colors.join(" • ");
+}
+
+const sizeChartLink =
+  document.getElementById("sizeChartLink");
+
+if (sizeChartLink && product.sizeChart) {
+  sizeChartLink.href =
+    product.sizeChart;
+}
 /* ---------- Full Prepaid ---------- */
 
 const prepaidContainer =
