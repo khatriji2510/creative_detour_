@@ -3,7 +3,7 @@
 // Supported media types: image, gif, video
 
 export const products = [
- {
+{
   id: "noir-oversized-tee",
 
   title: "Donnie Darko Tee",
@@ -19,6 +19,22 @@ export const products = [
 
   description:
     "Premium oversized graphic tee inspired by Donnie Darko.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png",
 
   payment: {
     prepaid: "pl_T5207RHq7lcb4y",
