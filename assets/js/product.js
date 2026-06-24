@@ -70,90 +70,29 @@ if (sizeChartLink && product.sizeChart) {
     product.sizeChart;
 }
 
-/* ---------- Full Prepaid ---------- */
-
 const prepaidContainer =
   document.getElementById("prepaidContainer");
 
-if (product.payment?.prepaid) {
+prepaidContainer.innerHTML = `
+  <button
+    id="buyNowButton"
+    class="button button--primary">
+    Buy Now
+  </button>
+`;
 
-  prepaidContainer.innerHTML = `
-    <h3>Full Prepaid Order</h3>
-    <p>
-      Pay the complete amount securely via Razorpay.
-    </p>
-  `;
+const buyNowButton =
+  document.getElementById("buyNowButton");
 
-  const prepaidForm =
-    document.createElement("form");
+buyNowButton.addEventListener("click", () => {
 
-  const prepaidScript =
-    document.createElement("script");
+  const size =
+    product.sizes?.[0] || "";
 
-  prepaidScript.src =
-    "https://checkout.razorpay.com/v1/payment-button.js";
+  const color =
+    product.colors?.[0] || "";
 
-  prepaidScript.async = true;
+  window.location.href =
+    `./checkout.html?id=${product.id}&size=${encodeURIComponent(size)}&color=${encodeURIComponent(color)}`;
 
-  prepaidScript.setAttribute(
-    "data-payment_button_id",
-    product.payment.prepaid
-  );
-
-  prepaidForm.appendChild(prepaidScript);
-
-  prepaidContainer.appendChild(prepaidForm);
-
-} else {
-
-  prepaidContainer.innerHTML = `
-    <h3>Coming Soon</h3>
-    <p>
-      Payment option not available yet.
-    </p>
-  `;
-}
-
-/* ---------- Partial COD ---------- */
-
-const codContainer =
-  document.getElementById("codContainer");
-
-if (product.payment?.cod) {
-
-  codContainer.innerHTML = `
-    <h3>Partial COD Order</h3>
-    <p>
-      Pay a small advance now and the remaining amount on delivery.
-    </p>
-  `;
-
-  const codForm =
-    document.createElement("form");
-
-  const codScript =
-    document.createElement("script");
-
-  codScript.src =
-    "https://checkout.razorpay.com/v1/payment-button.js";
-
-  codScript.async = true;
-
-  codScript.setAttribute(
-    "data-payment_button_id",
-    product.payment.cod
-  );
-
-  codForm.appendChild(codScript);
-
-  codContainer.appendChild(codForm);
-
-} else {
-
-  codContainer.innerHTML = `
-    <h3>Coming Soon</h3>
-    <p>
-      COD option not available yet.
-    </p>
-  `;
-}
+});
