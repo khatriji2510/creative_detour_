@@ -1,5 +1,5 @@
 import { products } from "./data/products.js";
-
+document.body.classList.add("is-ready");
 const params = new URLSearchParams(
   window.location.search
 );
