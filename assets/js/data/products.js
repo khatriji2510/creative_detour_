@@ -25,8 +25,8 @@ export const products = [
     cod: "pl_T52MHZYnqWubj5"
   }
 },
-  {
-    id: "ash-graphic-tee",
+ {
+    id: "donnie-gretchen-poster",
     title: "Donnie Gretchen Poster",
     price: 200,
     badge: "New",
@@ -36,10 +36,14 @@ export const products = [
       src: "./assets/media/products/a3 mockup.png",
       alt: "Animated graphic tee visual"
     },
-   buyLink: "https://rzp.io/rzp/x9i2BRd"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
   {
-    id: "midnight-hoodie",
+    id: "frank-artwork-poster",
     title: "Frank Artwork Poster",
     price: 200,
     badge: "Limited",
@@ -49,10 +53,14 @@ export const products = [
       src: "./assets/media/products/hero-03.jpg",
       alt: "Heavy hoodie in charcoal black"
     },
-   buyLink: "https://rzp.io/rzp/JEWsoUTA"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
   {
-    id: "monolith-tee",
+    id: "donnie-darko-poster",
     title: "Donnie Darko Poster",
     price: 200,
     badge: "Iconic",
@@ -62,11 +70,15 @@ export const products = [
       src: "./assets/media/products/6149679396307013603.jpg",
       alt: "Minimal oversized tee product shot"
     },
-   buyLink: "https://rzp.io/rzp/sqMT7qL5"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
- 
+
   {
-    id: "signal-graphic",
+    id: "kaleshi-me-yeah-obviously",
     title: "KALESHI? ME? YEAH OBVIOUSLY",
     price: 599,
     badge: "New",
@@ -76,10 +88,14 @@ export const products = [
       src: "./assets/media/products/sa.png",
       alt: "Graphic tee with monochrome print"
     },
-   buyLink: "https://rzp.io/rzp/KNrZJjb"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
   {
-    id: "void-hoodie",
+    id: "maybe-diet-coke-is-addicted",
     title: "Maybe Diet Coke Is Addicted",
     price: 699,
     badge: "Trendy",
@@ -90,11 +106,15 @@ export const products = [
       poster: "./assets/media/products/sfsd.png",
       alt: "Video of the void zip hoodie"
     },
-   buyLink: "https://rzp.io/rzp/8CKanIai"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
-   
+
   {
-    id: "oxide-oversized",
+    id: "what-a-time-to-be-alive",
     title: "WHAT A TIME TO BE ALIVE",
     price: 599,
     badge: "New",
@@ -104,10 +124,14 @@ export const products = [
       src: "./assets/media/products/whatatime.png",
       alt: "Oversized tee in charcoal tone"
     },
-   buyLink: "https://rzp.io/rzp/GfpGdUAE"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
   {
-    id: "grain-hoodie",
+    id: "ghurna-band-karo-noor",
     title: "Ghurna Band Karo Noor.",
     price: 699,
     badge: "Limited",
@@ -117,12 +141,15 @@ export const products = [
       src: "./assets/media/products/GhurnaBan.jpeg",
       alt: "Animated hoodie product media"
     },
-   buyLink: "https://rzp.io/rzp/mTYjf6P"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
-  
-  
+
   {
-    id: "afterimage-tee",
+    id: "vozinha-tee",
     title: "Vozinha Tee",
     price: 999,
     badge: "",
@@ -132,12 +159,15 @@ export const products = [
       src: "./assets/media/products/vozinha.png",
       alt: "Graphic tee on dark editorial set"
     },
-   buyLink: "https://rzp.io/rzp/xGk0d0Q"
-  }, 
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
+  },
 
-  
   {
-    
+    id: "obsession-regular-tee",
     title: "Obsession regular tee",
     price: 599,
     badge: "",
@@ -147,11 +177,15 @@ export const products = [
       src: "./assets/media/products/obsession1.png",
       alt: "Graphic tee on dark editorial set"
     },
-   buyLink: "https://rzp.io/rzp/57ePXPH"
-  }, 
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
+  },
 
   {
-    
+    id: "obsession-eye-regular-tee",
     title: "Obsession eye regular tee",
     price: 599,
     badge: "",
@@ -161,11 +195,15 @@ export const products = [
       src: "./assets/media/products/obsession2.png",
       alt: "Graphic tee on dark editorial set"
     },
-   buyLink: "https://rzp.io/rzp/Urju3zof"
-  }, 
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
+  },
 
   {
-    
+    id: "obsession-baby-tee",
     title: "Obsession baby tee",
     price: 599,
     badge: "",
@@ -175,20 +213,28 @@ export const products = [
       src: "./assets/media/products/obsession3.png",
       alt: "Graphic tee on dark editorial set"
     },
-   buyLink: "https://rzp.io/rzp/w8oBwIC"
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
   },
 
-    {
-    
+  {
+    id: "eh-earth-tee",
     title: "Eh Earth tee",
     price: 999,
     badge: "",
-    categories: ["Oversized Tees","Graphic Tees"],
+    categories: ["Oversized Tees", "Graphic Tees"],
     media: {
       type: "image",
       src: "./assets/media/products/eh.png",
       alt: "Graphic tee on dark editorial set"
     },
-   buyLink: "https://rzp.io/rzp/RLFr7bqI"
-  } 
+    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+    payment: {
+      prepaid: "",
+      cod: ""
+    }
+  }
 ];
