@@ -10,7 +10,7 @@ export const products = [
 
   price: 999,
   categories: ["Oversized Tees"],
-  badge: "Premium"
+  badge: "Premium",
   media: {
     type: "image",
     src: "./assets/media/products/noir-oversized-tee.png",
