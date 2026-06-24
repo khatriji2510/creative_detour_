@@ -6,23 +6,13 @@ const razorpay = new Razorpay({
 });
 
 module.exports = async (req, res) => {
+
   try {
 
-    if (req.method !== "POST") {
-      return res.status(405).json({
-        error: "Method not allowed"
-      });
-    }
-
-    const {
-      amount
-    } = req.body;
-
-    const order =
-      await razorpay.orders.create({
-        amount,
-        currency: "INR"
-      });
+    const order = await razorpay.orders.create({
+      amount: 100,
+      currency: "INR"
+    });
 
     return res.status(200).json(order);
 
@@ -31,7 +21,9 @@ module.exports = async (req, res) => {
     console.error(error);
 
     return res.status(500).json({
-      error: "Failed to create order"
+      error: error.message
     });
+
   }
+
 };
