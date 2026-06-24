@@ -9,8 +9,17 @@ export const products = [
   title: "Donnie Darko Tee",
 
   price: 999,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  partialCodAdvance: 199,
+
   categories: ["Oversized Tees"],
+
   badge: "Premium",
+
   media: {
     type: "image",
     src: "./assets/media/products/noir-oversized-tee.png",
@@ -18,7 +27,7 @@ export const products = [
   },
 
   description:
-    "Premium 260 GSM Terry-knit texture oversized graphic tee inspired by Donnie Darko.",
+    "Premium 260 GSM Terry-knit texture oversized graphic tee inspired by Donnie Darko.",
 
   sizes: [
     "XS",
@@ -35,12 +44,7 @@ export const products = [
   ],
 
   sizeChart:
-    "./assets/media/size-charts/oversizedtee-chart.png",
-
-  payment: {
-    prepaid: "pl_T5207RHq7lcb4y",
-    cod: "pl_T52MHZYnqWubj5"
-  }
+    "./assets/media/size-charts/oversizedtee-chart.png"
 },
  {
     id: "donnie-gretchen-poster",
