@@ -72,15 +72,7 @@ prepaidButton.addEventListener(
           }
         );
 
-      const order =
-        await response.json();
-
-      console.log(order);
-
-      alert(
-        "Order created successfully.\n\nOrder ID: " +
-        order.id
-      );
+      
 
     } catch (error) {
 
