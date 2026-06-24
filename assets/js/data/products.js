@@ -203,7 +203,6 @@ export const products = [
   },
 
   {
-   {
   id: "obsession-baby-tee",
 
   title: "Obsession Baby Tee",
