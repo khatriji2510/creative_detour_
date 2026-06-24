@@ -119,11 +119,76 @@ const options = {
 
     if (result.success) {
 
-      alert(
-        "Payment Verified ✅"
-      );
+  const orderData = {
 
-    } else {
+    date:
+      new Date()
+        .toLocaleString(),
+
+    orderId:
+      response.razorpay_order_id,
+
+    product:
+      product.title,
+
+    size,
+
+    color,
+
+    name:
+      document.getElementById(
+        "customerName"
+      ).value,
+
+    phone:
+      document.getElementById(
+        "customerPhone"
+      ).value,
+
+    address:
+      document.getElementById(
+        "customerAddress"
+      ).value,
+
+    pincode:
+      document.getElementById(
+        "customerPincode"
+      ).value,
+
+    paymentType:
+      "Prepaid",
+
+    amountPaid:
+      product.price +
+      product.shipping,
+
+    balanceDue:
+      0,
+
+    paymentId:
+      response.razorpay_payment_id
+
+  };
+
+  await fetch(
+    "/api/save-order",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type":
+          "application/json"
+      },
+      body: JSON.stringify(
+        orderData
+      )
+    }
+  );
+
+  alert(
+    "Payment Verified ✅"
+  );
+
+} else {
 
       alert(
         "Payment Verification Failed ❌"
