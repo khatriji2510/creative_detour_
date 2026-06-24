@@ -1341,3 +1341,54 @@ body {
 
   border-color: rgba(255,255,255,.2);
 }
+
+
+
+/* PRODUCT INFO ACCORDION */
+
+.product-info-dropdowns {
+  margin-top: 40px;
+}
+
+.product-dropdown {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 18px 0;
+}
+
+.product-dropdown:last-child {
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.product-dropdown summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.product-dropdown summary::after {
+  content: "+";
+  font-size: 1.2rem;
+}
+
+.product-dropdown[open] summary::after {
+  content: "−";
+}
+
+.product-dropdown ul {
+  margin-top: 16px;
+  padding-left: 18px;
+}
+
+.product-dropdown li {
+  color: rgba(255,255,255,.7);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
