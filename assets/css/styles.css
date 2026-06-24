@@ -1449,3 +1449,8 @@ body {
 #checkoutSummary p {
   margin-bottom: .5rem;
 }
+
+#checkoutTitle {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+}
