@@ -203,22 +203,49 @@ export const products = [
   },
 
   {
-    id: "obsession-baby-tee",
-    title: "Obsession baby tee",
-    price: 599,
-    badge: "",
-    categories: ["Baby Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/obsession3.png",
-      alt: "Graphic tee on dark editorial set"
-    },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
-    payment: {
-      prepaid: "pl_T5QMWa4KKUyiFd",
-      cod: "pl_T5QNRFPPReB6m3"
-    }
+   {
+  id: "obsession-baby-tee",
+
+  title: "Obsession Baby Tee",
+
+  price: 599,
+
+  badge: "",
+
+  categories: ["Baby Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/obsession3.png",
+    alt: "Graphic tee on dark editorial set"
   },
+
+  description:
+    "Premium fitted baby tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+   "XL",
+   "XXL"
+  ],
+
+  colors: [
+    "White",
+   "Lavander",
+   "Light Baby Pink"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/baby-tee-chart.png",
+
+  payment: {
+    prepaid: "pl_T5QMWa4KKUyiFd",
+    cod: "pl_T5QNRFPPReB6m3"
+  }
+},
 
   {
     id: "eh-earth-tee",
