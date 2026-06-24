@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Checkout | Creative Detour</title>
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="./index.html" class="brand-mark">
+      Creative Detour
+    </a>
+  </div>
+</header>
+
+<main class="section">
+
+  <div class="container">
+
+    <div class="checkout-page">
+
+      <h1 id="checkoutTitle"></h1>
+
+      <div id="checkoutSummary"></div>
+
+      <form id="checkoutForm">
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Full Name"
+          required>
+
+        <input
+          type="tel"
+          id="customerPhone"
+          placeholder="Phone Number"
+          required>
+
+        <textarea
+          id="customerAddress"
+          placeholder="Full Address"
+          required></textarea>
+
+        <input
+          type="text"
+          id="customerPincode"
+          placeholder="Pincode"
+          required>
+
+        <button
+          type="button"
+          id="prepaidButton">
+          Full Prepaid
+        </button>
+
+        <button
+          type="button"
+          id="codButton">
+          Partial COD
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</main>
+
+<script type="module" src="./assets/js/checkout.js"></script>
+
+</body>
+</html>
