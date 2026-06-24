@@ -42,3 +42,55 @@ document.getElementById(
 <p><strong>Shipping:</strong> ₹${product.shipping}</p>
 <p><strong>Total:</strong> ₹${product.price + product.shipping}</p>
 `;
+
+const prepaidButton =
+  document.getElementById(
+    "prepaidButton"
+  );
+
+prepaidButton.addEventListener(
+  "click",
+  async () => {
+
+    try {
+
+      const response =
+        await fetch(
+          "/api/create-order",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type":
+                "application/json"
+            },
+            body: JSON.stringify({
+              amount:
+                (product.price +
+                  product.shipping) *
+                100
+            })
+          }
+        );
+
+      const order =
+        await response.json();
+
+      console.log(order);
+
+      alert(
+        "Order created successfully.\n\nOrder ID: " +
+        order.id
+      );
+
+    } catch (error) {
+
+      console.error(error);
+
+      alert(
+        "Failed to create order"
+      );
+
+    }
+
+  }
+);
