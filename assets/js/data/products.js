@@ -94,7 +94,7 @@ export const products = [
     }
   },
 
-  {
+ {
     id: "kaleshi-me-yeah-obviously",
     title: "KALESHI? ME? YEAH OBVIOUSLY",
     price: 599,
@@ -105,7 +105,26 @@ export const products = [
       src: "./assets/media/products/sa.png",
       alt: "Graphic tee with monochrome print"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "Black",
+      "White",
+      "Lavender",
+      "Light Baby Pink"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/baby-tee-chart.png",
+
     payment: {
       prepaid: "pl_T5QEKzbRp357P0",
       cod: "pl_T5QFKCrHm8R1tr"
