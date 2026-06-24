@@ -18,7 +18,7 @@ export const products = [
   },
 
   description:
-    "Premium oversized graphic tee inspired by Donnie Darko.",
+    "Premium 260 GSM Terry-knit texture oversized graphic tee inspired by Donnie Darko.",
 
   sizes: [
     "XS",
@@ -26,7 +26,8 @@ export const products = [
     "M",
     "L",
     "XL",
-    "XXL"
+    "XXL",
+    "3XL"
   ],
 
   colors: [
