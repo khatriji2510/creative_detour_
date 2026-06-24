@@ -95,15 +95,53 @@ const options = {
   description:
     product.title,
 
-  handler: function (response) {
+  handler: async function (response) {
 
-    console.log(response);
+  try {
+
+    const verifyResponse =
+      await fetch(
+        "/api/verify-payment",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type":
+              "application/json"
+          },
+          body: JSON.stringify(
+            response
+          )
+        }
+      );
+
+    const result =
+      await verifyResponse.json();
+
+    if (result.success) {
+
+      alert(
+        "Payment Verified ✅"
+      );
+
+    } else {
+
+      alert(
+        "Payment Verification Failed ❌"
+      );
+
+    }
+
+  } catch (error) {
+
+    console.error(error);
 
     alert(
-      "Payment Successful!"
+      "Verification Error"
     );
 
   }
+
+}
 
 };
 
