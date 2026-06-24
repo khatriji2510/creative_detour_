@@ -142,14 +142,34 @@ export const products = [
       poster: "./assets/media/products/sfsd.png",
       alt: "Video of the void zip hoodie"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "Black",
+      "White",
+      "Grey",
+      "Lavender",
+      "Baby Pink"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/oversizedtee-chart.png",
+
     payment: {
       prepaid: "pl_T5Q2yqpphJ6HYD",
       cod: "pl_T5Q5Ydi66MfAPv"
     }
   },
 
-  {
+ {
     id: "what-a-time-to-be-alive",
     title: "WHAT A TIME TO BE ALIVE",
     price: 599,
@@ -160,7 +180,26 @@ export const products = [
       src: "./assets/media/products/whatatime.png",
       alt: "Oversized tee in charcoal tone"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "Black",
+      "White",
+      "Lavender",
+      "Light Baby Pink"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/baby-tee-chart.png",
+
     payment: {
       prepaid: "pl_T5PnPiORuwlrqA",
       cod: "pl_T5PqJUsmGyeBR6"
@@ -177,14 +216,34 @@ export const products = [
       src: "./assets/media/products/GhurnaBan.jpeg",
       alt: "Animated hoodie product media"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "Black",
+      "White",
+      "Grey",
+      "Lavender",
+      "Baby Pink"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/oversizedtee-chart.png",
+
     payment: {
       prepaid: "pl_T5QGbVaefQD6bt",
       cod: "pl_T5QIRrd179EbMt"
     }
   },
 
-  {
+ {
     id: "vozinha-tee",
     title: "Vozinha Tee",
     price: 999,
@@ -195,25 +254,69 @@ export const products = [
       src: "./assets/media/products/vozinha.png",
       alt: "Graphic tee on dark editorial set"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "Black"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/oversizedtee-chart.png",
+
     payment: {
       prepaid: "pl_T5QKrAoRW2PR3i",
       cod: "pl_T5QLXi5DRgsfZp"
     }
   },
 
-  {
+{
     id: "obsession-regular-tee",
     title: "Obsession regular tee",
     price: 599,
     badge: "",
-    categories: ["Graphic Tees"],
+    categories: ["Regular Tees"],
     media: {
       type: "image",
       src: "./assets/media/products/obsession1.png",
       alt: "Graphic tee on dark editorial set"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "White",
+      "Black",
+      "Baby Pink",
+      "Peach",
+      "Lavender",
+      "Beige",
+      "Coral",
+      "Mint",
+      "Baby Blue",
+      "Flamingo",
+      "Jade",
+      "Mushroom",
+      "Off White"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/regulartee-chart.png",
+
     payment: {
       prepaid: "pl_T5QPvbq1KnpnfK",
       cod: "pl_T5QQZSF5mBRoxr"
@@ -225,13 +328,44 @@ export const products = [
     title: "Obsession eye regular tee",
     price: 599,
     badge: "",
-    categories: ["Graphic Tees"],
+    categories: ["Regular Tees"],
     media: {
       type: "image",
       src: "./assets/media/products/obsession2.png",
       alt: "Graphic tee on dark editorial set"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "White",
+      "Black",
+      "Steel Grey",
+      "Baby Pink",
+      "Lavender",
+      "Navy Blue",
+      "Charcoal Melange",
+      "Bottle Green",
+      "Purple",
+      "Yellow",
+      "Coffee Brown",
+      "Beige",
+      "Baby Blue",
+      "Flamingo",
+      "Copper",
+      "Off White"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/regulartee-chart.png",
+
     payment: {
       prepaid: "pl_T5QOUeuc12ABtQ",
       cod: "pl_T5QPBaZWLEejJi"
@@ -282,7 +416,7 @@ export const products = [
   }
 },
 
-  {
+ {
     id: "eh-earth-tee",
     title: "Eh Earth tee",
     price: 999,
@@ -293,7 +427,23 @@ export const products = [
       src: "./assets/media/products/eh.png",
       alt: "Graphic tee on dark editorial set"
     },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
+
+    sizes: [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+
+    colors: [
+      "Off White"
+    ],
+
+    sizeChart:
+      "./assets/media/size-charts/oversizedtee-chart.png",
+
     payment: {
       prepaid: "pl_T5QXNaTc9V24sD",
       cod: "pl_T5QY6cuNBx2SfW"
