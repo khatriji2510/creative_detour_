@@ -590,7 +590,7 @@ export const products = [
     src: "./assets/media/products/eh.png",
     alt: "Graphic tee on dark editorial set"
   },
-
+ 
   sizes: [
     "XS",
     "S",
