@@ -1627,3 +1627,36 @@ button:disabled {
   }
 
 }
+
+
+/* ---------- Success Page ---------- */
+
+.success-message{
+
+  margin-bottom:24px;
+
+}
+
+#successDetails{
+
+  text-align:left;
+
+}
+
+#successDetails hr{
+
+  margin:22px 0;
+
+  border:none;
+
+  border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+#successDetails h2{
+
+  text-align:center;
+
+  margin-bottom:10px;
+
+}
