@@ -53,9 +53,8 @@ if (descriptionElement) {
 
 /* ---------- Buy Button ---------- */
 
-const prepaidContainer =
-  document.getElementById("prepaidContainer");
-
+const buyNowContainer =
+  document.getElementById("buyNowContainer");
 prepaidContainer.innerHTML = `
   <button
     id="buyNowButton"
