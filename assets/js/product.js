@@ -10,17 +10,21 @@ const product = products.find(
 );
 
 if (!product) {
+
   document.body.innerHTML = `
-    <div style="
-      color:white;
-      padding:40px;
-      font-size:20px;
-      font-family:sans-serif;
-    ">
+    <div
+      style="
+        color:white;
+        padding:40px;
+        font-size:20px;
+        font-family:sans-serif;
+      ">
       Product not found
     </div>
   `;
+
   throw new Error("Product not found");
+
 }
 
 /* ---------- Product Content ---------- */
@@ -37,19 +41,66 @@ document.getElementById("productImage").src =
 document.getElementById("productImage").alt =
   product.media.alt || product.title;
 
-/* ---------- Description ---------- */
-
 const descriptionElement =
   document.getElementById("productDescription");
 
-if (descriptionElement && product.description) {
+if (descriptionElement) {
+
   descriptionElement.textContent =
-    product.description;
+    product.description || "";
+
 }
-const sizesElement =
-  document.getElementById("productSizes");
+
+/* ---------- Buy Button ---------- */
+
+const prepaidContainer =
+  document.getElementById("prepaidContainer");
+
+prepaidContainer.innerHTML = `
+  <button
+    id="buyNowButton"
+    class="button button--primary"
+    disabled>
+    Choose Size
+  </button>
+`;
+
+const buyNowButton =
+  document.getElementById("buyNowButton");
 
 let selectedSize = null;
+let selectedColor = null;
+
+function updateBuyButton() {
+
+  const needsColor =
+    (product.colors || []).length > 1;
+
+  if (
+    selectedSize &&
+    (!needsColor || selectedColor)
+  ) {
+
+    buyNowButton.disabled = false;
+    buyNowButton.textContent = "Buy Now";
+
+  } else {
+
+    buyNowButton.disabled = true;
+
+    buyNowButton.textContent =
+      needsColor
+        ? "Choose Size & Color"
+        : "Choose Size";
+
+  }
+
+}
+
+/* ---------- Size Options ---------- */
+
+const sizesElement =
+  document.getElementById("productSizes");
 
 if (sizesElement && product.sizes) {
 
@@ -59,12 +110,8 @@ if (sizesElement && product.sizes) {
       document.createElement("button");
 
     button.type = "button";
-
-    button.className =
-      "option-button";
-
-    button.textContent =
-      size;
+    button.className = "option-button";
+    button.textContent = size;
 
     button.onclick = () => {
 
@@ -76,56 +123,24 @@ if (sizesElement && product.sizes) {
           btn.classList.remove("active")
         );
 
-      button.classList.add(
-        "active"
-      );
+      button.classList.add("active");
 
       selectedSize = size;
 
+      updateBuyButton();
+
     };
 
-    sizesElement.appendChild(
-      button
-    );
+    sizesElement.appendChild(button);
 
   });
 
 }
 
+/* ---------- Color Options ---------- */
+
 const colorsElement =
   document.getElementById("productColors");
-
-let selectedColor = null;
-
-const buyNowButton =
-  document.getElementById(
-    "buyNowButton"
-  );
-
-function updateBuyButton() {
-
-  if (
-    selectedSize &&
-    selectedColor
-  ) {
-
-    buyNowButton.disabled =
-      false;
-
-    buyNowButton.textContent =
-      "Buy Now";
-
-  } else {
-
-    buyNowButton.disabled =
-      true;
-
-    buyNowButton.textContent =
-      "Select Size & Color";
-
-  }
-
-}
 
 if (colorsElement && product.colors) {
 
@@ -135,12 +150,16 @@ if (colorsElement && product.colors) {
       document.createElement("button");
 
     button.type = "button";
+    button.className = "option-button";
+    button.textContent = color;
 
-    button.className =
-      "option-button";
+    if (product.colors.length === 1) {
 
-    button.textContent =
-      color;
+      button.classList.add("active");
+
+      selectedColor = color;
+
+    }
 
     button.onclick = () => {
 
@@ -152,50 +171,54 @@ if (colorsElement && product.colors) {
           btn.classList.remove("active")
         );
 
-      button.classList.add(
-        "active"
-      );
+      button.classList.add("active");
 
       selectedColor = color;
 
+      updateBuyButton();
+
     };
 
-    colorsElement.appendChild(
-      button
-    );
+    colorsElement.appendChild(button);
 
   });
 
 }
+/* ---------- Size Chart ---------- */
 
 const sizeChartLink =
   document.getElementById("sizeChartLink");
 
-if (sizeChartLink && product.sizeChart) {
+if (
+  sizeChartLink &&
+  product.sizeChart
+) {
+
   sizeChartLink.href =
     product.sizeChart;
+
 }
 
-const prepaidContainer =
-  document.getElementById("prepaidContainer");
+/* ---------- Initial Button State ---------- */
 
-prepaidContainer.innerHTML = `
-  <button
-    id="buyNowButton"
-    class="button button--primary"
-    disabled>
-    Select Size & Color
-  </button>
-`;
+updateBuyButton();
 
-const buyNowButton =
-  document.getElementById("buyNowButton");
+/* ---------- Buy Now ---------- */
 
-buyNowButton.addEventListener("click", () => {
+buyNowButton.addEventListener(
+  "click",
+  () => {
 
+    if (buyNowButton.disabled) {
+      return;
+    }
 
+    window.location.href =
+      `./checkout.html?id=${product.id}&size=${encodeURIComponent(
+        selectedSize
+      )}&color=${encodeURIComponent(
+        selectedColor || ""
+      )}`;
 
-window.location.href =
-  `./checkout.html?id=${product.id}&size=${encodeURIComponent(selectedSize)}&color=${encodeURIComponent(selectedColor)}`;
-
-});
+  }
+);
