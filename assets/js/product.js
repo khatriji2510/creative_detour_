@@ -193,15 +193,7 @@ const buyNowButton =
 
 buyNowButton.addEventListener("click", () => {
 
- if (!selectedSize) {
-  alert("Please select a size.");
-  return;
-}
 
-if (!selectedColor) {
-  alert("Please select a color.");
-  return;
-}
 
 window.location.href =
   `./checkout.html?id=${product.id}&size=${encodeURIComponent(selectedSize)}&color=${encodeURIComponent(selectedColor)}`;
