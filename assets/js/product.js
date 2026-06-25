@@ -56,12 +56,14 @@ if (descriptionElement) {
 const buyNowContainer =
   document.getElementById("buyNowContainer");
 buyNowContainer.innerHTML = `
-  <button
-    id="buyNowButton"
-    class="button button--primary"
-    disabled>
-    Choose Size
-  </button>
+ <button
+  id="buyNowButton"
+  class="buy-now-button"
+  disabled>
+
+  ⚡ Buy Now
+
+</button>
 `;
 
 const buyNowButton =
@@ -75,24 +77,14 @@ function updateBuyButton() {
   const needsColor =
     (product.colors || []).length > 1;
 
-  if (
-    selectedSize &&
-    (!needsColor || selectedColor)
-  ) {
-
-    buyNowButton.disabled = false;
-    buyNowButton.textContent = "Buy Now";
-
-  } else {
-
-    buyNowButton.disabled = true;
-
-    buyNowButton.textContent =
-      needsColor
-        ? "Choose Size & Color"
-        : "Choose Size";
-
-  }
+  buyNowButton.disabled =
+    !(
+      selectedSize &&
+      (
+        !needsColor ||
+        selectedColor
+      )
+    );
 
 }
 
@@ -126,7 +118,7 @@ if (sizesElement && product.sizes) {
 
       selectedSize = size;
 
-      updateBuyButton();
+      ();
 
     };
 
