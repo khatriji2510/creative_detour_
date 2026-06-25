@@ -99,282 +99,324 @@ export const products = [
   },
 
  {
-    id: "kaleshi-me-yeah-obviously",
-    title: "KALESHI? ME? YEAH OBVIOUSLY",
-    price: 599,
-    badge: "New",
-    categories: ["Baby Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/sa.png",
-      alt: "Graphic tee with monochrome print"
-    },
+  id: "kaleshi-me-yeah-obviously",
 
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+  title: "KALESHI? ME? YEAH OBVIOUSLY",
 
-    colors: [
-      "Black",
-      "White",
-      "Lavender",
-      "Light Baby Pink"
-    ],
+  price: 599,
 
-    sizeChart:
-      "./assets/media/size-charts/baby-tee-chart.png",
+  shipping: 60,
 
-    payment: {
-      prepaid: "pl_T5QEKzbRp357P0",
-      cod: "pl_T5QFKCrHm8R1tr"
-    }
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "New",
+
+  categories: ["Baby Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/sa.png",
+    alt: "Graphic tee with monochrome print"
   },
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "Black",
+    "White",
+    "Lavender",
+    "Light Baby Pink"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/baby-tee-chart.png"
+},
   {
-    id: "maybe-diet-coke-is-addicted",
-    title: "Maybe Diet Coke Is Addicted",
-    price: 699,
-    badge: "Trendy",
-    categories: ["Oversized Tees", "Best Sellers"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/sfsd.png",
-      poster: "./assets/media/products/sfsd.png",
-      alt: "Video of the void zip hoodie"
-    },
+  id: "maybe-diet-coke-is-addicted",
 
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+  title: "Maybe Diet Coke Is Addicted",
 
-    colors: [
-      "Black",
-      "White",
-      "Grey",
-      "Lavender",
-      "Baby Pink"
-    ],
+  price: 699,
 
-    sizeChart:
-      "./assets/media/size-charts/oversizedtee-chart.png",
+  shipping: 60,
 
-    payment: {
-      prepaid: "pl_T5Q2yqpphJ6HYD",
-      cod: "pl_T5Q5Ydi66MfAPv"
-    }
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "Trendy",
+
+  categories: ["Oversized Tees", "Best Sellers"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/sfsd.png",
+    poster: "./assets/media/products/sfsd.png",
+    alt: "Video of the void zip hoodie"
   },
 
- {
-    id: "what-a-time-to-be-alive",
-    title: "WHAT A TIME TO BE ALIVE",
-    price: 599,
-    badge: "New",
-    categories: ["Baby Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/whatatime.png",
-      alt: "Oversized tee in charcoal tone"
-    },
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
 
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+  colors: [
+    "Black",
+    "White",
+    "Grey",
+    "Lavender",
+    "Baby Pink"
+  ],
 
-    colors: [
-      "Black",
-      "White",
-      "Lavender",
-      "Light Baby Pink"
-    ],
-
-    sizeChart:
-      "./assets/media/size-charts/baby-tee-chart.png",
-
-    payment: {
-      prepaid: "pl_T5PnPiORuwlrqA",
-      cod: "pl_T5PqJUsmGyeBR6"
-    }
-  },
-  {
-    id: "ghurna-band-karo-noor",
-    title: "Ghurna Band Karo Noor.",
-    price: 699,
-    badge: "Limited",
-    categories: ["Oversized Tees", "Best Sellers"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/GhurnaBan.jpeg",
-      alt: "Animated hoodie product media"
-    },
-
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-
-    colors: [
-      "Black",
-      "White",
-      "Grey",
-      "Lavender",
-      "Baby Pink"
-    ],
-
-    sizeChart:
-      "./assets/media/size-charts/oversizedtee-chart.png",
-
-    payment: {
-      prepaid: "pl_T5QGbVaefQD6bt",
-      cod: "pl_T5QIRrd179EbMt"
-    }
-  },
-
- {
-    id: "vozinha-tee",
-    title: "Vozinha Tee",
-    price: 999,
-    badge: "",
-    categories: ["Graphic Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/vozinha.png",
-      alt: "Graphic tee on dark editorial set"
-    },
-
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-
-    colors: [
-      "Black"
-    ],
-
-    sizeChart:
-      "./assets/media/size-charts/oversizedtee-chart.png",
-
-    payment: {
-      prepaid: "pl_T5QKrAoRW2PR3i",
-      cod: "pl_T5QLXi5DRgsfZp"
-    }
-  },
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},
 
 {
-    id: "obsession-regular-tee",
-    title: "Obsession regular tee",
-    price: 599,
-    badge: "",
-    categories: ["Regular Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/obsession1.png",
-      alt: "Graphic tee on dark editorial set"
-    },
+  id: "what-a-time-to-be-alive",
 
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+  title: "WHAT A TIME TO BE ALIVE",
 
-    colors: [
-      "White",
-      "Black",
-      "Baby Pink",
-      "Peach",
-      "Lavender",
-      "Beige",
-      "Coral",
-      "Mint",
-      "Baby Blue",
-      "Flamingo",
-      "Jade",
-      "Mushroom",
-      "Off White"
-    ],
+  price: 599,
 
-    sizeChart:
-      "./assets/media/size-charts/regulartee-chart.png",
+  shipping: 60,
 
-    payment: {
-      prepaid: "pl_T5QPvbq1KnpnfK",
-      cod: "pl_T5QQZSF5mBRoxr"
-    }
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "New",
+
+  categories: ["Baby Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/whatatime.png",
+    alt: "Oversized tee in charcoal tone"
   },
 
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "Black",
+    "White",
+    "Lavender",
+    "Light Baby Pink"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/baby-tee-chart.png"
+},
   {
-    id: "obsession-eye-regular-tee",
-    title: "Obsession eye regular tee",
-    price: 599,
-    badge: "",
-    categories: ["Regular Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/obsession2.png",
-      alt: "Graphic tee on dark editorial set"
-    },
+  id: "ghurna-band-karo-noor",
 
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+  title: "Ghurna Band Karo Noor.",
 
-    colors: [
-      "White",
-      "Black",
-      "Steel Grey",
-      "Baby Pink",
-      "Lavender",
-      "Navy Blue",
-      "Charcoal Melange",
-      "Bottle Green",
-      "Purple",
-      "Yellow",
-      "Coffee Brown",
-      "Beige",
-      "Baby Blue",
-      "Flamingo",
-      "Copper",
-      "Off White"
-    ],
+  price: 699,
 
-    sizeChart:
-      "./assets/media/size-charts/regulartee-chart.png",
+  shipping: 60,
 
-    payment: {
-      prepaid: "pl_T5QOUeuc12ABtQ",
-      cod: "pl_T5QPBaZWLEejJi"
-    }
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "Limited",
+
+  categories: ["Oversized Tees", "Best Sellers"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/GhurnaBan.jpeg",
+    alt: "Animated hoodie product media"
   },
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "Black",
+    "White",
+    "Grey",
+    "Lavender",
+    "Baby Pink"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},
+
+{
+  id: "vozinha-tee",
+
+  title: "Vozinha Tee",
+
+  price: 999,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "",
+
+  categories: ["Graphic Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/vozinha.png",
+    alt: "Graphic tee on dark editorial set"
+  },
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},
+
+{
+  id: "obsession-regular-tee",
+
+  title: "Obsession regular tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "",
+
+  categories: ["Regular Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/obsession1.png",
+    alt: "Graphic tee on dark editorial set"
+  },
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black",
+    "Baby Pink",
+    "Peach",
+    "Lavender",
+    "Beige",
+    "Coral",
+    "Mint",
+    "Baby Blue",
+    "Flamingo",
+    "Jade",
+    "Mushroom",
+    "Off White"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
+ {
+  id: "obsession-eye-regular-tee",
+
+  title: "Obsession eye regular tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "",
+
+  categories: ["Regular Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/obsession2.png",
+    alt: "Graphic tee on dark editorial set"
+  },
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black",
+    "Steel Grey",
+    "Baby Pink",
+    "Lavender",
+    "Navy Blue",
+    "Charcoal Melange",
+    "Bottle Green",
+    "Purple",
+    "Yellow",
+    "Coffee Brown",
+    "Beige",
+    "Baby Blue",
+    "Flamingo",
+    "Copper",
+    "Off White"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
 
   {
   id: "obsession-baby-tee",
@@ -382,6 +424,12 @@ export const products = [
   title: "Obsession Baby Tee",
 
   price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
 
   badge: "",
 
@@ -401,56 +449,57 @@ export const products = [
     "S",
     "M",
     "L",
-   "XL",
-   "XXL"
+    "XL",
+    "XXL"
   ],
 
   colors: [
     "White",
-   "Lavander",
-   "Light Baby Pink"
+    "Lavender",
+    "Light Baby Pink"
   ],
 
   sizeChart:
-    "./assets/media/size-charts/baby-tee-chart.png",
-
-  payment: {
-    prepaid: "pl_T5QMWa4KKUyiFd",
-    cod: "pl_T5QNRFPPReB6m3"
-  }
+    "./assets/media/size-charts/baby-tee-chart.png"
 },
 
  {
-    id: "eh-earth-tee",
-    title: "Eh Earth tee",
-    price: 999,
-    badge: "",
-    categories: ["Oversized Tees", "Graphic Tees"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/eh.png",
-      alt: "Graphic tee on dark editorial set"
-    },
+  id: "eh-earth-tee",
 
-    sizes: [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
+  title: "Eh Earth tee",
 
-    colors: [
-      "Off White"
-    ],
+  price: 999,
 
-    sizeChart:
-      "./assets/media/size-charts/oversizedtee-chart.png",
+  shipping: 60,
 
-    payment: {
-      prepaid: "pl_T5QXNaTc9V24sD",
-      cod: "pl_T5QY6cuNBx2SfW"
-    }
-  }
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  badge: "",
+
+  categories: ["Oversized Tees", "Graphic Tees"],
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/eh.png",
+    alt: "Graphic tee on dark editorial set"
+  },
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "Off White"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+}
 ];
