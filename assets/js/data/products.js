@@ -47,22 +47,59 @@ export const products = [
     "./assets/media/size-charts/oversizedtee-chart.png"
 },
  {
-    id: "donnie-gretchen-poster",
-    title: "Donnie Gretchen Poster",
-    price: 200,
-    badge: "New",
-    categories: ["Posters"],
-    media: {
-      type: "gif",
-      src: "./assets/media/products/a3 mockup.png",
-      alt: "Animated graphic tee visual"
-    },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
-    payment: {
-      prepaid: "",
-      cod: ""
-    }
+  id: "donnie-gretchen-poster",
+
+  title: "Donnie Gretchen Poster",
+
+  badge: "New",
+
+  categories: ["Posters"],
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  partialCodAdvance: 99,
+
+  media: {
+    type: "gif",
+    src: "./assets/media/products/a3 mockup.png",
+    alt: "Donnie Gretchen Poster"
   },
+
+  description:
+    "Premium quality matte finish poster available with or without frame.",
+
+  variants: [
+
+    {
+      size: "A4",
+      price: 160
+    },
+
+    {
+      size: "A4 + Frame",
+      price: 640
+    },
+
+    {
+      size: "A3",
+      price: 180
+    },
+
+    {
+      size: "A3 + Frame",
+      price: 900
+    }
+
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ]
+
+},
   {
     id: "frank-artwork-poster",
     title: "Frank Artwork Poster",
