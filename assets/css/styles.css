@@ -1498,3 +1498,12 @@ body {
   color:black;
 
 }
+
+
+button:disabled {
+
+  opacity: .45;
+
+  cursor: not-allowed;
+
+}
