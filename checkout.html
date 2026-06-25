@@ -59,17 +59,45 @@
       placeholder="Pincode"
       required>
 
+    <div class="payment-options">
+
+  <div class="payment-card">
+
+    <h3>💳 Full Prepaid</h3>
+
+    <p class="payment-price">
+      ₹<span id="prepaidAmount"></span>
+    </p>
+
     <button
       type="button"
       id="prepaidButton">
-      Full Prepaid
+      Continue
     </button>
+
+  </div>
+
+  <div class="payment-card">
+
+    <h3>📦 Partial COD</h3>
+
+    <p>
+      Pay ₹<span id="codAdvance"></span> now
+    </p>
+
+    <p>
+      ₹<span id="codRemaining"></span> on delivery
+    </p>
 
     <button
       type="button"
       id="codButton">
-      Partial COD
+      Continue
     </button>
+
+  </div>
+
+</div>
 
   </form>
 
