@@ -162,13 +162,17 @@ const buyNowButton =
 
 buyNowButton.addEventListener("click", () => {
 
-  const size =
-    product.sizes?.[0] || "";
+ if (!selectedSize) {
+  alert("Please select a size.");
+  return;
+}
 
-  const color =
-    product.colors?.[0] || "";
+if (!selectedColor) {
+  alert("Please select a color.");
+  return;
+}
 
-  window.location.href =
-    `./checkout.html?id=${product.id}&size=${encodeURIComponent(size)}&color=${encodeURIComponent(color)}`;
+window.location.href =
+  `./checkout.html?id=${product.id}&size=${encodeURIComponent(selectedSize)}&color=${encodeURIComponent(selectedColor)}`;
 
 });
