@@ -73,9 +73,17 @@ export function createProductCard(product) {
   const meta = document.createElement("div");
   meta.className = "product-card__meta";
 
-  const price = document.createElement("span");
-  price.className = "price";
-  price.textContent = formatPrice(product.price);
+const price = document.createElement("span");
+
+price.className = "price";
+
+const displayPrice =
+  product.price ??
+  product.variants[0].price;
+
+price.textContent =
+  formatPrice(displayPrice) +
+  (product.variants ? "+" : "");
 
 const cta = document.createElement("a");
 
