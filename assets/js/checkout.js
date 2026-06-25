@@ -343,27 +343,22 @@ async function startPayment(
 
             };
 
-            await fetch(
-              "/api/save-order",
-              {
-                method:
-                  "POST",
+          window.location.href =
+  `./success.html?order=${response.razorpay_order_id}&payment=${response.razorpay_payment_id}`;
 
-                headers: {
-                  "Content-Type":
-                    "application/json"
-                },
+fetch(
+  "/api/save-order",
+  {
+    method: "POST",
 
-                body:
-                  JSON.stringify(
-                    orderData
-                  )
+    headers: {
+      "Content-Type": "application/json"
+    },
 
-              }
-            );
+    body: JSON.stringify(orderData)
 
-            window.location.href =
-              `./success.html?order=${response.razorpay_order_id}&payment=${response.razorpay_payment_id}`;
+  }
+).catch(console.error);
 
           } catch (error) {
 
