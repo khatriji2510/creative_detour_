@@ -9,10 +9,68 @@ module.exports = async (req, res) => {
 
   try {
 
-    const order = await razorpay.orders.create({
-      amount: 100,
-      currency: "INR"
-    });
+    const {
+
+      amount,
+
+      product,
+
+      size,
+
+      color,
+
+      name,
+
+      phone,
+
+      address,
+
+      pincode,
+
+      paymentType,
+
+      orderTotal,
+
+      amountPaid,
+
+      balanceDue
+
+    } = req.body;
+
+    const order =
+      await razorpay.orders.create({
+
+        amount,
+
+        currency: "INR",
+
+        notes: {
+
+          product,
+
+          size,
+
+          color,
+
+          name,
+
+          phone,
+
+          address,
+
+          pincode,
+
+          paymentType,
+
+          orderTotal,
+
+          amountPaid,
+
+          balanceDue
+
+        }
+
+      });
 
     return res.status(200).json(order);
 
@@ -21,7 +79,9 @@ module.exports = async (req, res) => {
     console.error(error);
 
     return res.status(500).json({
+
       error: error.message
+
     });
 
   }
