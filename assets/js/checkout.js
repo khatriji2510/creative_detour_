@@ -19,6 +19,11 @@ const size =
 const color =
   params.get("color");
 
+const selectedPrice =
+  Number(
+    params.get("price")
+  ) || selectedPrice;
+
 const product =
   products.find(
     item => item.id === productId
@@ -48,11 +53,11 @@ document.getElementById(
 
   <hr>
 
-  <p><strong>Product:</strong> ₹${product.price}</p>
+  <p><strong>Product:</strong> ₹${selectedPrice}</p>
 
   <p><strong>Shipping:</strong> ₹${product.shipping}</p>
 
-  <p><strong>Total (Prepaid):</strong> ₹${product.price + product.shipping}</p>
+  <p><strong>Total (Prepaid):</strong> ₹${selectedPrice + product.shipping}</p>
 
   <hr>
 
@@ -63,16 +68,16 @@ document.getElementById(
   <p><strong>Pay Now:</strong> ₹${product.codAdvance}</p>
 
   <p><strong>Pay on Delivery:</strong> ₹${
-    (product.price + product.shipping + product.codCharge) - product.codAdvance
+    (selectedPrice + product.shipping + product.codCharge) - product.codAdvance
   }</p>
 `;
 
 const prepaidTotal =
-  product.price +
+  selectedPrice +
   product.shipping;
 
 const codTotal =
-  product.price +
+  selectedPrice +
   product.shipping +
   product.codCharge;
 
@@ -173,7 +178,7 @@ codButton.disabled = true;
   if (paymentType === "Prepaid") {
 
     payableAmount =
-      product.price +
+      selectedPrice +
       product.shipping;
 
     amountPaid =
@@ -191,7 +196,7 @@ codButton.disabled = true;
 
     balanceDue =
       (
-        product.price +
+        selectedPrice +
         product.shipping +
         product.codCharge
       ) -
@@ -250,12 +255,12 @@ codButton.disabled = true;
 
       ?
 
-    product.price +
+    selectedPrice +
     product.shipping
 
       :
 
-    product.price +
+    selectedPrice +
     product.shipping +
     product.codCharge,
 
@@ -404,12 +409,12 @@ modal: {
 
                   ?
 
-                product.price +
+                selectedPrice +
                 product.shipping
 
                   :
 
-                product.price +
+                selectedPrice +
                 product.shipping +
                 product.codCharge,
 
@@ -451,12 +456,12 @@ modal: {
 
       ?
 
-      product.price +
+      selectedPrice +
       product.shipping
 
       :
 
-      product.price +
+      selectedPrice +
       product.shipping +
       product.codCharge
 
