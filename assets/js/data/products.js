@@ -14,7 +14,7 @@ export const products = [
 
   codCharge: 50,
 
-  partialCodAdvance: 199,
+  codAdvance: 199,
 
   categories: ["Oversized Tees"],
 
