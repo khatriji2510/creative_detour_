@@ -128,188 +128,300 @@ function validateForm() {
 
 
 
+/* ---------- Payment Buttons ---------- */
+
 const prepaidButton =
   document.getElementById(
     "prepaidButton"
   );
 
-prepaidButton.addEventListener(
-  "click",
-  async () => {
-if (!validateForm()) {
-  return;
-}
-    try {
-
-     const response =
-  await fetch(
-    "/api/create-order",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type":
-          "application/json"
-      },
-      body: JSON.stringify({
-        amount:
-          (product.price +
-            product.shipping) *
-          100
-      })
-    }
+const codButton =
+  document.getElementById(
+    "codButton"
   );
 
-const order =
-  await response.json();
+/* ---------- Start Payment ---------- */
 
-const options = {
+async function startPayment(
+  paymentType
+) {
 
-  key:
-    "rzp_test_T5XfJ1gxIf9WZl",
+  if (!validateForm()) {
+    return;
+  }
 
-  amount:
-    order.amount,
+  let payableAmount;
 
-  currency:
-    order.currency,
+  let amountPaid;
 
-  order_id:
-    order.id,
+  let balanceDue;
 
-  name:
-    "Creative Detour",
+  if (paymentType === "Prepaid") {
 
-  description:
-    product.title,
+    payableAmount =
+      product.price +
+      product.shipping;
 
-  handler: async function (response) {
+    amountPaid =
+      payableAmount;
+
+    balanceDue = 0;
+
+  } else {
+
+    payableAmount =
+      product.codAdvance;
+
+    amountPaid =
+      product.codAdvance;
+
+    balanceDue =
+      (
+        product.price +
+        product.shipping +
+        product.codCharge
+      ) -
+      product.codAdvance;
+
+  }
 
   try {
 
-    const verifyResponse =
+    const response =
       await fetch(
-        "/api/verify-payment",
+        "/api/create-order",
         {
           method: "POST",
           headers: {
             "Content-Type":
               "application/json"
           },
-          body: JSON.stringify(
-            response
-          )
+          body: JSON.stringify({
+            amount:
+              payableAmount *
+              100
+          })
         }
       );
 
-    const result =
-      await verifyResponse.json();
+    const order =
+      await response.json();
 
-    if (result.success) {
+    const options = {
 
-  const orderData = {
+      key:
+        "rzp_test_T5XfJ1gxIf9WZl",
 
-    date:
-      new Date()
-        .toLocaleString(),
+      amount:
+        order.amount,
 
-    orderId:
-      response.razorpay_order_id,
+      currency:
+        order.currency,
 
-    product:
-      product.title,
+      order_id:
+        order.id,
 
-    size,
+      name:
+        "Creative Detour",
 
-    color,
+      description:
+        product.title,
 
-    name:
-      document.getElementById(
-        "customerName"
-      ).value,
+      prefill: {
 
-    phone:
-      document.getElementById(
-        "customerPhone"
-      ).value,
+        name:
+          document.getElementById(
+            "customerName"
+          ).value,
 
-    address:
-      document.getElementById(
-        "customerAddress"
-      ).value,
+        contact:
+          document.getElementById(
+            "customerPhone"
+          ).value
 
-    pincode:
-      document.getElementById(
-        "customerPincode"
-      ).value,
-
-    paymentType:
-      "Prepaid",
-
-    amountPaid:
-      product.price +
-      product.shipping,
-
-    balanceDue:
-      0,
-
-    paymentId:
-      response.razorpay_payment_id
-
-  };
-
-  await fetch(
-    "/api/save-order",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type":
-          "application/json"
       },
-      body: JSON.stringify(
-        orderData
-      )
-    }
-  );
 
-  window.location.href =
-  `./success.html?order=${response.razorpay_order_id}&payment=${response.razorpay_payment_id}`;
+      handler:
+        async function (
+          response
+        ) {
 
-} else {
+          try {
 
-      alert(
-        "Payment Verification Failed ❌"
+            const verifyResponse =
+              await fetch(
+                "/api/verify-payment",
+                {
+                  method:
+                    "POST",
+
+                  headers: {
+                    "Content-Type":
+                      "application/json"
+                  },
+
+                  body:
+                    JSON.stringify(
+                      response
+                    )
+
+                }
+              );
+
+            const result =
+              await verifyResponse.json();
+
+            if (!result.success) {
+
+              alert(
+                "Payment Verification Failed"
+              );
+
+              return;
+
+            }
+                        const orderData = {
+
+              date:
+                new Date()
+                  .toLocaleString(),
+
+              orderId:
+                response.razorpay_order_id,
+
+              product:
+                product.title,
+
+              size,
+
+              color,
+
+              name:
+                document.getElementById(
+                  "customerName"
+                ).value,
+
+              phone:
+                document.getElementById(
+                  "customerPhone"
+                ).value,
+
+              address:
+                document.getElementById(
+                  "customerAddress"
+                ).value,
+
+              pincode:
+                document.getElementById(
+                  "customerPincode"
+                ).value,
+
+              paymentType,
+
+              orderTotal:
+
+                paymentType ===
+                "Prepaid"
+
+                  ?
+
+                product.price +
+                product.shipping
+
+                  :
+
+                product.price +
+                product.shipping +
+                product.codCharge,
+
+              amountPaid,
+
+              balanceDue,
+
+              paymentId:
+                response.razorpay_payment_id
+
+            };
+
+            await fetch(
+              "/api/save-order",
+              {
+                method:
+                  "POST",
+
+                headers: {
+                  "Content-Type":
+                    "application/json"
+                },
+
+                body:
+                  JSON.stringify(
+                    orderData
+                  )
+
+              }
+            );
+
+            window.location.href =
+              `./success.html?order=${response.razorpay_order_id}&payment=${response.razorpay_payment_id}`;
+
+          } catch (error) {
+
+            console.error(
+              error
+            );
+
+            alert(
+              "Verification Error"
+            );
+
+          }
+
+        }
+
+    };
+
+    const razorpay =
+      new Razorpay(
+        options
       );
 
-    }
+    razorpay.open();
 
   } catch (error) {
 
-    console.error(error);
+    console.error(
+      error
+    );
 
     alert(
-      "Verification Error"
+      "Failed to start payment"
     );
 
   }
 
 }
 
-};
+/* ---------- Buttons ---------- */
 
-const razorpay =
-  new Razorpay(options);
+prepaidButton.addEventListener(
+  "click",
+  () => {
 
-razorpay.open();
+    startPayment(
+      "Prepaid"
+    );
 
-    } catch (error) {
+  }
+);
 
-      console.error(error);
+codButton.addEventListener(
+  "click",
+  () => {
 
-      alert(
-        "Failed to start payment"
-      );
-
-    }
+    startPayment(
+      "Partial COD"
+    );
 
   }
 );
