@@ -1507,3 +1507,50 @@ button:disabled {
   cursor: not-allowed;
 
 }
+
+
+
+
+/* ---------- Payment Cards ---------- */
+
+.payment-options{
+
+  display:grid;
+
+  gap:20px;
+
+  margin-top:30px;
+
+}
+
+.payment-card{
+
+  border:1px solid rgba(255,255,255,.12);
+
+  border-radius:14px;
+
+  padding:24px;
+
+}
+
+.payment-card h3{
+
+  margin-bottom:12px;
+
+}
+
+.payment-price{
+
+  font-size:2rem;
+
+  font-weight:700;
+
+  margin:18px 0;
+
+}
+
+.payment-card button{
+
+  width:100%;
+
+}
