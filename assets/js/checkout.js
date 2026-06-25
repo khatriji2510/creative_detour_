@@ -43,6 +43,45 @@ document.getElementById(
 <p><strong>Total:</strong> ₹${product.price + product.shipping}</p>
 `;
 
+function validateForm() {
+
+  const name =
+    document.getElementById("customerName").value.trim();
+
+  const phone =
+    document.getElementById("customerPhone").value.trim();
+
+  const address =
+    document.getElementById("customerAddress").value.trim();
+
+  const pincode =
+    document.getElementById("customerPincode").value.trim();
+
+  if (name.length < 2) {
+    alert("Please enter your full name.");
+    return false;
+  }
+
+  if (!/^[6-9]\d{9}$/.test(phone)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    return false;
+  }
+
+  if (address.length < 10) {
+    alert("Please enter your complete address.");
+    return false;
+  }
+
+  if (!/^\d{6}$/.test(pincode)) {
+    alert("Please enter a valid 6-digit pincode.");
+    return false;
+  }
+
+  return true;
+}
+
+
+
 const prepaidButton =
   document.getElementById(
     "prepaidButton"
@@ -51,7 +90,9 @@ const prepaidButton =
 prepaidButton.addEventListener(
   "click",
   async () => {
-
+if (!validateForm()) {
+  return;
+}
     try {
 
      const response =
