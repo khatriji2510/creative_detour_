@@ -118,7 +118,7 @@ if (sizesElement && product.sizes) {
 
       selectedSize = size;
 
-      ();
+      updateBuyButton();
 
     };
 
