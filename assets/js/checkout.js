@@ -422,8 +422,49 @@ modal: {
 
             };
 
-          window.location.href =
-  `./success.html?order=${response.razorpay_order_id}&payment=${response.razorpay_payment_id}`;
+         sessionStorage.setItem(
+  "lastOrder",
+  JSON.stringify({
+
+    orderId:
+      response.razorpay_order_id,
+
+    paymentId:
+      response.razorpay_payment_id,
+
+    product:
+      product.title,
+
+    size,
+
+    color,
+
+    paymentType,
+
+    amountPaid,
+
+    balanceDue,
+
+    orderTotal:
+
+      paymentType === "Prepaid"
+
+      ?
+
+      product.price +
+      product.shipping
+
+      :
+
+      product.price +
+      product.shipping +
+      product.codCharge
+
+  })
+);
+
+window.location.href =
+  "./success.html";
 
 fetch(
   "/api/save-order",
