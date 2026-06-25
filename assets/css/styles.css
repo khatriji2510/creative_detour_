@@ -1660,3 +1660,48 @@ button:disabled {
   margin-bottom:10px;
 
 }
+
+
+/* ---------- Buy Now Button ---------- */
+
+.buy-now-button{
+
+  width:100%;
+
+  margin-top:28px;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:#fff;
+
+  color:#000;
+
+  font-size:1rem;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.25s;
+
+}
+
+.buy-now-button:hover:not(:disabled){
+
+  transform:translateY(-2px);
+
+  box-shadow:0 12px 30px rgba(255,255,255,.18);
+
+}
+
+.buy-now-button:disabled{
+
+  opacity:.45;
+
+  cursor:not-allowed;
+
+}
