@@ -463,10 +463,7 @@ modal: {
   })
 );
 
-window.location.href =
-  "./success.html";
-
-fetch(
+await fetch(
   "/api/save-order",
   {
     method: "POST",
@@ -478,7 +475,10 @@ fetch(
     body: JSON.stringify(orderData)
 
   }
-).catch(console.error);
+);
+
+window.location.href =
+  "./success.html";
 
           } catch (error) {
 
