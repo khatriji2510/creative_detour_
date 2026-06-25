@@ -95,45 +95,113 @@ export const products = [
   ],
 
   colors: [
-    "White",
-    "Black"
+   "White Frame",
+    "Black Frame"
   ]
 
 },
   {
-    id: "frank-artwork-poster",
-    title: "Frank Artwork Poster",
-    price: 200,
-    badge: "Limited",
-    categories: ["Posters"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/hero-03.jpg",
-      alt: "Heavy hoodie in charcoal black"
-    },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
-    payment: {
-      prepaid: "",
-      cod: ""
-    }
+  id: "frank-artwork-poster",
+
+  title: "Frank Artwork Poster",
+
+  badge: "Limited",
+
+  categories: ["Posters"],
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 99,
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/hero-03.jpg",
+    alt: "Heavy hoodie in charcoal black"
   },
+
+  description:
+    "Premium quality matte finish poster available with or without frame.",
+
+  variants: [
+    {
+      size: "A4",
+      price: 160
+    },
+
+    {
+      size: "A4 + Frame",
+      price: 640
+    },
+
+    {
+      size: "A3",
+      price: 180
+    },
+
+    {
+      size: "A3 + Frame",
+      price: 900
+    }
+  ],
+
+  colors: [
+    "White Frame",
+    "Black Frame"
+  ]
+},
   {
-    id: "donnie-darko-poster",
-    title: "Donnie Darko Poster",
-    price: 200,
-    badge: "Iconic",
-    categories: ["Posters"],
-    media: {
-      type: "image",
-      src: "./assets/media/products/6149679396307013603.jpg",
-      alt: "Minimal oversized tee product shot"
-    },
-    description: "Premium oversized graphic tee inspired by Donnie Darko.",
-    payment: {
-      prepaid: "",
-      cod: ""
-    }
+  id: "donnie-darko-poster",
+
+  title: "Donnie Darko Poster",
+
+  badge: "Iconic",
+
+  categories: ["Posters"],
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 99,
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/6149679396307013603.jpg",
+    alt: "Minimal oversized tee product shot"
   },
+
+  description:
+    "Premium quality matte finish poster available with or without frame.",
+
+  variants: [
+    {
+      size: "A4",
+      price: 160
+    },
+
+    {
+      size: "A4 + Frame",
+      price: 640
+    },
+
+    {
+      size: "A3",
+      price: 180
+    },
+
+    {
+      size: "A3 + Frame",
+      price: 900
+    }
+  ],
+
+  colors: [
+    "White Frame",
+    "Black Frame"
+  ]
+},
 
  {
   id: "kaleshi-me-yeah-obviously",
