@@ -620,7 +620,7 @@ export const products = [
 
   
 {
-  id: "noir-oversized-tee",
+  id: "test-tee",
 
   title: "TEST",
 
@@ -661,7 +661,7 @@ export const products = [
 
   sizeChart:
     "./assets/media/size-charts/oversizedtee-chart.png"
-},
+}
 
 
   
