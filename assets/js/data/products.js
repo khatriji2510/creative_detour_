@@ -95,8 +95,8 @@ export const products = [
   ],
 
   colors: [
-   "White Frame",
-    "Black Frame"
+   "White",
+    "Black"
   ]
 
 },
@@ -147,8 +147,8 @@ export const products = [
   ],
 
   colors: [
-    "White Frame",
-    "Black Frame"
+    "White",
+    "Black"
   ]
 },
   {
@@ -198,8 +198,8 @@ export const products = [
   ],
 
   colors: [
-    "White Frame",
-    "Black Frame"
+    "White",
+    "Black"
   ]
 },
 
