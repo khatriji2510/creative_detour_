@@ -59,7 +59,7 @@ export const products = [
 
   codCharge: 50,
 
-  partialCodAdvance: 99,
+  codAdvance: 99,
 
   media: {
     type: "gif",
