@@ -606,5 +606,66 @@ export const products = [
 
   sizeChart:
     "./assets/media/size-charts/oversizedtee-chart.png"
-}
+},
+
+
+
+
+
+
+
+
+
+
+
+  
+{
+  id: "noir-oversized-tee",
+
+  title: "TEST",
+
+  price: 1,
+
+  shipping: 1,
+
+  codCharge: 1,
+
+  codAdvance: 1,
+
+  categories: ["Oversized Tees"],
+
+  badge: "Premium",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/noir-oversized-tee.png",
+    alt: "Donnie Darko Tee"
+  },
+
+  description:
+    "Premium 260 GSM Terry-knit texture oversized graphic tee inspired by Donnie Darko.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
+    "3XL"
+  ],
+
+  colors: [
+    "White"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},
+
+
+  
+
+  
+  
 ];
