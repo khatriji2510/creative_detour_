@@ -61,6 +61,34 @@ document.getElementById(
   }</p>
 `;
 
+const prepaidTotal =
+  product.price +
+  product.shipping;
+
+const codTotal =
+  product.price +
+  product.shipping +
+  product.codCharge;
+
+const codRemaining =
+  codTotal -
+  product.codAdvance;
+
+document.getElementById(
+  "prepaidAmount"
+).textContent =
+  prepaidTotal;
+
+document.getElementById(
+  "codAdvance"
+).textContent =
+  product.codAdvance;
+
+document.getElementById(
+  "codRemaining"
+).textContent =
+  codRemaining;
+
 function validateForm() {
 
   const name =
