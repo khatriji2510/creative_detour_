@@ -225,9 +225,8 @@ const options = {
     }
   );
 
-  alert(
-    "Payment Verified ✅"
-  );
+  window.location.href =
+  `./success.html?order=${response.razorpay_order_id}&payment=${response.razorpay_payment_id}`;
 
 } else {
 
