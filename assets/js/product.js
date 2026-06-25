@@ -70,6 +70,7 @@ const buyNowButton =
   document.getElementById("buyNowButton");
 
 let selectedSize = null;
+let selectedPrice = product.price;
 let selectedColor = null;
 
 function updateBuyButton() {
@@ -93,38 +94,106 @@ function updateBuyButton() {
 const sizesElement =
   document.getElementById("productSizes");
 
-if (sizesElement && product.sizes) {
+if (sizesElement) {
 
-  product.sizes.forEach(size => {
+  // ---------- Variant Products (Posters etc.) ----------
 
-    const button =
-      document.createElement("button");
+  if (product.variants) {
 
-    button.type = "button";
-    button.className = "option-button";
-    button.textContent = size;
+    product.variants.forEach(variant => {
 
-    button.onclick = () => {
+      const button =
+        document.createElement("button");
 
-      document
-        .querySelectorAll(
-          "#productSizes .option-button"
-        )
-        .forEach(btn =>
-          btn.classList.remove("active")
-        );
+      button.type = "button";
 
-      button.classList.add("active");
+      button.className =
+        "option-button";
 
-      selectedSize = size;
+      button.textContent =
+        variant.size;
 
-      updateBuyButton();
+      button.onclick = () => {
 
-    };
+        document
+          .querySelectorAll(
+            "#productSizes .option-button"
+          )
+          .forEach(btn =>
+            btn.classList.remove("active")
+          );
 
-    sizesElement.appendChild(button);
+        button.classList.add("active");
 
-  });
+        selectedSize =
+          variant.size;
+
+        selectedPrice =
+          variant.price;
+
+        document.getElementById(
+          "productPrice"
+        ).textContent =
+          `₹${selectedPrice}`;
+
+        updateBuyButton();
+
+      };
+
+      sizesElement.appendChild(
+        button
+      );
+
+    });
+
+  }
+
+  // ---------- Existing Products (Tees etc.) ----------
+
+  else if (product.sizes) {
+
+    product.sizes.forEach(size => {
+
+      const button =
+        document.createElement("button");
+
+      button.type = "button";
+
+      button.className =
+        "option-button";
+
+      button.textContent =
+        size;
+
+      button.onclick = () => {
+
+        document
+          .querySelectorAll(
+            "#productSizes .option-button"
+          )
+          .forEach(btn =>
+            btn.classList.remove("active")
+          );
+
+        button.classList.add("active");
+
+        selectedSize =
+          size;
+
+        selectedPrice =
+          product.price;
+
+        updateBuyButton();
+
+      };
+
+      sizesElement.appendChild(
+        button
+      );
+
+    });
+
+  }
 
 }
 
@@ -205,11 +274,7 @@ buyNowButton.addEventListener(
     }
 
     window.location.href =
-      `./checkout.html?id=${product.id}&size=${encodeURIComponent(
-        selectedSize
-      )}&color=${encodeURIComponent(
-        selectedColor || ""
-      )}`;
+  `./checkout.html?id=${product.id}&size=${encodeURIComponent(selectedSize)}&color=${encodeURIComponent(selectedColor)}&price=${selectedPrice}`;
 
   }
 );
