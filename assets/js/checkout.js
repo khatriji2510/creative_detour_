@@ -278,7 +278,7 @@ codButton.disabled = true;
     const options = {
 
       key:
-        "rzp_test_T5XfJ1gxIf9WZl",
+        "rzp_live_T5XUEf1nM7h3c9",
 
       amount:
         order.amount,
