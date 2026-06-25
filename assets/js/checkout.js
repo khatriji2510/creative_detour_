@@ -4,6 +4,12 @@ const params = new URLSearchParams(
   window.location.search
 );
 
+
+const paymentLoading =
+  document.getElementById(
+    "paymentLoading"
+  );
+
 const productId =
   params.get("id");
 
@@ -150,6 +156,14 @@ async function startPayment(
     return;
   }
 
+  paymentLoading.classList.add(
+  "active"
+);
+
+prepaidButton.disabled = true;
+
+codButton.disabled = true;
+  
   let payableAmount;
 
   let amountPaid;
@@ -290,6 +304,22 @@ async function startPayment(
 
       },
 
+modal: {
+
+  ondismiss() {
+
+    paymentLoading.classList.remove(
+      "active"
+    );
+
+    prepaidButton.disabled = false;
+
+    codButton.disabled = false;
+
+  }
+
+},
+      
       handler:
         async function (
           response
@@ -438,6 +468,14 @@ fetch(
       error
     );
 
+paymentLoading.classList.remove(
+  "active"
+);
+
+prepaidButton.disabled = false;
+
+codButton.disabled = false;
+    
     alert(
       "Failed to start payment"
     );
