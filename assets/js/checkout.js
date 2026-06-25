@@ -197,10 +197,59 @@ async function startPayment(
               "application/json"
           },
           body: JSON.stringify({
-            amount:
-              payableAmount *
-              100
-          })
+
+  amount:
+    payableAmount * 100,
+
+  product:
+    product.title,
+
+  size,
+
+  color,
+
+  name:
+    document.getElementById(
+      "customerName"
+    ).value,
+
+  phone:
+    document.getElementById(
+      "customerPhone"
+    ).value,
+
+  address:
+    document.getElementById(
+      "customerAddress"
+    ).value,
+
+  pincode:
+    document.getElementById(
+      "customerPincode"
+    ).value,
+
+  paymentType,
+
+  orderTotal:
+
+    paymentType === "Prepaid"
+
+      ?
+
+    product.price +
+    product.shipping
+
+      :
+
+    product.price +
+    product.shipping +
+    product.codCharge,
+
+  amountPaid,
+
+  balanceDue
+
+})
         }
       );
 
