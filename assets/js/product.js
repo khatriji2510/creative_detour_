@@ -49,17 +49,93 @@ if (descriptionElement && product.description) {
 const sizesElement =
   document.getElementById("productSizes");
 
+let selectedSize = null;
+
 if (sizesElement && product.sizes) {
-  sizesElement.textContent =
-    product.sizes.join(" • ");
+
+  product.sizes.forEach(size => {
+
+    const button =
+      document.createElement("button");
+
+    button.type = "button";
+
+    button.className =
+      "option-button";
+
+    button.textContent =
+      size;
+
+    button.onclick = () => {
+
+      document
+        .querySelectorAll(
+          "#productSizes .option-button"
+        )
+        .forEach(btn =>
+          btn.classList.remove("active")
+        );
+
+      button.classList.add(
+        "active"
+      );
+
+      selectedSize = size;
+
+    };
+
+    sizesElement.appendChild(
+      button
+    );
+
+  });
+
 }
 
 const colorsElement =
   document.getElementById("productColors");
 
+let selectedColor = null;
+
 if (colorsElement && product.colors) {
-  colorsElement.textContent =
-    product.colors.join(" • ");
+
+  product.colors.forEach(color => {
+
+    const button =
+      document.createElement("button");
+
+    button.type = "button";
+
+    button.className =
+      "option-button";
+
+    button.textContent =
+      color;
+
+    button.onclick = () => {
+
+      document
+        .querySelectorAll(
+          "#productColors .option-button"
+        )
+        .forEach(btn =>
+          btn.classList.remove("active")
+        );
+
+      button.classList.add(
+        "active"
+      );
+
+      selectedColor = color;
+
+    };
+
+    colorsElement.appendChild(
+      button
+    );
+
+  });
+
 }
 
 const sizeChartLink =
