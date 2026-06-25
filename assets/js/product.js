@@ -97,6 +97,36 @@ const colorsElement =
 
 let selectedColor = null;
 
+const buyNowButton =
+  document.getElementById(
+    "buyNowButton"
+  );
+
+function updateBuyButton() {
+
+  if (
+    selectedSize &&
+    selectedColor
+  ) {
+
+    buyNowButton.disabled =
+      false;
+
+    buyNowButton.textContent =
+      "Buy Now";
+
+  } else {
+
+    buyNowButton.disabled =
+      true;
+
+    buyNowButton.textContent =
+      "Select Size & Color";
+
+  }
+
+}
+
 if (colorsElement && product.colors) {
 
   product.colors.forEach(color => {
@@ -152,8 +182,9 @@ const prepaidContainer =
 prepaidContainer.innerHTML = `
   <button
     id="buyNowButton"
-    class="button button--primary">
-    Buy Now
+    class="button button--primary"
+    disabled>
+    Select Size & Color
   </button>
 `;
 
