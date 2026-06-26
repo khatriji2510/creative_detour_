@@ -606,46 +606,6 @@ export const products = [
 
   sizeChart:
     "./assets/media/size-charts/oversizedtee-chart.png"
-},
-
-  {
-  id: "TEST",
-
-  title: "test",
-
-  price: 1,
-
-  shipping: 1,
-
-  codCharge: 1,
-
-  codAdvance: 1,
-
-  badge: "",
-
-  categories: ["Oversized Tees", "Graphic Tees"],
-
-  media: {
-    type: "image",
-    src: "./assets/media/products/eh.png",
-    alt: "Graphic tee on dark editorial set"
-  },
- 
-  sizes: [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
-  ],
-
-  colors: [
-    "Off White"
-  ],
-
-  sizeChart:
-    "./assets/media/size-charts/oversizedtee-chart.png"
 }
 
   
