@@ -410,6 +410,11 @@ modal: {
                   "customerPhone"
                 ).value,
 
+              email:
+                    document.getElementById(
+                    "customerEmail"
+                      ).value,
+                            
               address:
                 document.getElementById(
                   "customerAddress"
