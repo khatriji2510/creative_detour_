@@ -93,9 +93,7 @@ cta.textContent = "Buy Now";
 
 cta.href = `./product.html?id=${product.id}`;
 
-cta.target = "_blank";
 
-cta.rel = "noopener noreferrer";
 
   meta.append(price, cta);
   body.append(title, meta);
