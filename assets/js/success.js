@@ -97,7 +97,24 @@ ${paymentHtml}
 <hr>
 
 <p>
-  We'll contact you shortly with your shipping updates.
+  We've also sent an order confirmation to your email address.
+</p>
+
+<p style="
+font-size:14px;
+color:#aaa;
+line-height:1.6;
+">
+
+If you don't see it within a few minutes,
+please check your <strong>Spam</strong> or
+<strong>Junk</strong> folder and mark it as
+<strong>"Not Spam"</strong>.
+
+</p>
+
+<p>
+  We'll contact you again once your order has been packed and shipped.
 </p>
 
 `;
