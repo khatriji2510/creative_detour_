@@ -108,6 +108,14 @@ function validateForm() {
   const phone =
     document.getElementById("customerPhone").value.trim();
 
+  const email =
+  document
+    .getElementById(
+      "customerEmail"
+    )
+    .value
+    .trim();
+
   const address =
     document.getElementById("customerAddress").value.trim();
 
@@ -124,6 +132,18 @@ function validateForm() {
     return false;
   }
 
+if (
+  !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+) {
+
+  alert(
+    "Please enter a valid email address."
+  );
+
+  return false;
+
+}
+  
   if (address.length < 10) {
     alert("Please enter your complete address.");
     return false;
