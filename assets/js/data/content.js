@@ -43,7 +43,7 @@ export const heroSlides = [
 
 export const featuredIds = [
   "noir-oversized-tee",
-  "ash-graphic-tee",
-  "midnight-hoodie",
-  "void-hoodie"
+  "donnie-gretchen-poster",
+  "frank-artwork-poster",
+  "obsession-regular-tee"
 ];
