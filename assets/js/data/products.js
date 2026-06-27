@@ -829,6 +829,52 @@ export const products = [
     "./assets/media/size-charts/regulartee-chart.png"
 },
 
+{
+  id: "love-the-unloved-regular-tee",
 
+  title: "Love The Unloved Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/love-the-unloved-regular-tee.png",
+    alt: "Love The Unloved Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
+
+
+  
   
 ];
