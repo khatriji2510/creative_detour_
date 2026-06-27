@@ -696,6 +696,48 @@ export const products = [
     "./assets/media/size-charts/regulartee-chart.png"
 },
 
-  
+  {
+  id: "go-with-the-flow-goldfish-regular-tee",
+
+  title: "Go With The Flow Goldfish Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/go-with-the-flow-goldfish-regular-tee.png",
+    alt: "Go With The Flow Goldfish Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
   
 ];
