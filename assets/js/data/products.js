@@ -875,6 +875,50 @@ export const products = [
 
 
 
+  {
+  id: "i-love-your-personality-regular-tee",
+
+  title: "I Love Your Personality Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/i-love-your-personality-regular-tee.png",
+    alt: "I Love Your Personality Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
   
   
 ];
