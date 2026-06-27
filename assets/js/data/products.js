@@ -739,5 +739,50 @@ export const products = [
   sizeChart:
     "./assets/media/size-charts/regulartee-chart.png"
 },
+
+
+{
+  id: "why-am-i-so-fly-regular-tee",
+
+  title: "Why Am I So Fly Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/why-am-i-so-fly-regular-tee.png",
+    alt: "Why Am I So Fly Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
   
 ];
