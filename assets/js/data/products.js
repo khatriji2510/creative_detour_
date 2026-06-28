@@ -965,5 +965,227 @@ export const products = [
     "./assets/media/size-charts/regulartee-chart.png"
 },
   
+{
+  id: "papayas-regular-tee",
+
+  title: "Papayas Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/papayas-regular-tee.png",
+    alt: "Papayas Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
+  {
+  id: "coffee-regular-tee",
+
+  title: "Coffee Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/coffee-regular-tee.png",
+    alt: "Coffee Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
+  {
+  id: "onions-regular-tee",
+
+  title: "Onions Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/onions-regular-tee.png",
+    alt: "Onions Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
+  {
+  id: "honey-regular-tee",
+
+  title: "Honey Regular Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Regular Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/honey-regular-tee.png",
+    alt: "Honey Regular Tee"
+  },
+
+  description:
+    "Premium 180 GSM regular fit graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/regulartee-chart.png"
+},
+
+  {
+  id: "man-eater-baby-tee",
+
+  title: "Man Eater Baby Tee",
+
+  price: 599,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Baby Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/man-eater-baby-tee.png",
+    alt: "Man Eater Baby Tee"
+  },
+
+  description:
+    "Premium fitted baby tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White",
+    "Black"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/baby-tee-chart.png"
+},
+
+
+
   
 ];
