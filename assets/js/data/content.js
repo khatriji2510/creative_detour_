@@ -46,5 +46,8 @@ export const featuredIds = [
   "frank-artwork-poster",
   "obsession-regular-tee",
   "man-eater-baby-tee",
-  "oh-deer-regular-tee"
+  "oh-deer-regular-tee",
+  "dalmations-regular-tee",
+  "vozinha-tee",
+  "blueberry-pancakes-regular-tee"
 ];
