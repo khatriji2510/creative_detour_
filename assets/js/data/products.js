@@ -3,7 +3,49 @@
 // Supported media types: image, gif, video
 
 export const products = [
-{
+
+  {
+  id: "Custom-tee",
+
+  title: "Custom Tee Token",
+
+  price: 200,
+
+  shipping: 0,
+
+  codCharge: 0,
+
+  codAdvance: 0,
+
+  categories: ["Oversized Tees"],
+
+  badge: "Premium",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/download.gif",
+    alt: "Custom Tee"
+  },
+
+  description:
+    "Buy This Token And DM me on insta for customization.",
+
+  sizes: [
+    "DEFAULT"
+  ],
+
+  colors: [
+    "DEFAULT"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},
+  
+  
+  
+  
+  {
   id: "noir-oversized-tee",
 
   title: "Donnie Darko Tee",
