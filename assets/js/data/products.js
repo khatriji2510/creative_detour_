@@ -22,7 +22,7 @@ export const products = [
   badge: "Premium",
 
   media: {
-    type: "image",
+    type: "GIF",
     src: "./assets/media/products/download.gif",
     alt: "Custom Tee"
   },
