@@ -15,7 +15,7 @@ export const products = [
 
   codCharge: 0,
 
-  codAdvance: 0,
+  codAdvance: 200,
 
   categories: ["Oversized Tees"],
 
@@ -28,7 +28,7 @@ export const products = [
   },
 
   description:
-    "Buy This Token And DM me on insta for customization.",
+    "Buy this token and DM me on Instagram for customization. COD is not available for custom products.The token amount will be deducted from the total amount during the customization process in the DMs.",
 
   sizes: [
     "DEFAULT"
