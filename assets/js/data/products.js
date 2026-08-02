@@ -42,7 +42,48 @@ export const products = [
     "./assets/media/size-charts/oversizedtee-chart.png"
 },
   
-  
+{
+  id: "kisme-jersey",
+
+  title: "Kisme Jersey",
+
+  price: 799,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Oversized Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/kisme-jersey.png",
+    alt: "Kisme Jersey"
+  },
+
+  description:
+    "Premium 240 GSM micro-knitted oversized jersey featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "Default"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},  
   
   
   {
