@@ -41,7 +41,51 @@ export const products = [
   sizeChart:
     "./assets/media/size-charts/oversizedtee-chart.png"
 },
-  
+
+{
+  id: "dur-reh-unisex-drop-shoulder-tshirt",
+
+  title: "Dur Reh Unisex Drop Shoulder Tshirt",
+
+  price: 799,
+
+  shipping: 60,
+
+  codCharge: 50,
+
+  codAdvance: 199,
+
+  categories: ["Oversized Tees"],
+
+  badge: "",
+
+  media: {
+    type: "image",
+    src: "./assets/media/products/dur-reh-unisex-drop-shoulder-tshirt.jpg",
+    alt: "Dur Reh Unisex Drop Shoulder Tshirt"
+  },
+
+  description:
+    "Premium oversized unisex drop shoulder graphic tee featuring original Creative Detour artwork.",
+
+  sizes: [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+
+  colors: [
+    "White"
+  ],
+
+  sizeChart:
+    "./assets/media/size-charts/oversizedtee-chart.png"
+},
+
+
 {
   id: "kisme-jersey",
 
